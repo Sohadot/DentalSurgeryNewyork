@@ -1,26 +1,17 @@
 import Link from 'next/link'
-
-const navItems = [
-  { href: '/methodology', label: 'Methodology' },
-  { href: '/guides/choose-an-oral-surgeon', label: 'Choose a Surgeon' },
-  { href: '/costs/dental-implants', label: 'Cost Guides' },
-]
+import { PRIMARY_NAV } from '../lib/site-config'
 
 export default function SiteHeader() {
   return (
-    <header className="border-b border-slate-200 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link href="/" className="font-serif text-lg text-slate-950">
-          Dental Surgery <span className="italic text-slate-700">New York</span>
+    <header className="site-header">
+      <div className="container shell-row">
+        <Link href="/" className="brand-mark" aria-label="Dental Surgery New York home">
+          Dental Surgery <span>New York</span>
         </Link>
 
-        <nav className="hidden gap-8 md:flex">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm text-slate-600 transition hover:text-slate-950"
-            >
+        <nav className="site-nav" aria-label="Primary">
+          {PRIMARY_NAV.map((item) => (
+            <Link key={item.href} href={item.href} className="site-nav-link">
               {item.label}
             </Link>
           ))}

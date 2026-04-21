@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
-import './globals.css'
-import SiteHeader from '@/components/site-header'
-import SiteFooter from '@/components/site-footer'
+import '../styles/globals.css'
+import SiteHeader from '../components/site-header'
+import SiteFooter from '../components/site-footer'
+import { SITE_DESCRIPTION, SITE_LANGUAGE, SITE_NAME } from '../lib/site-config'
+import { buildOrganizationSchema, buildWebSiteSchema } from '../lib/schema'
 
 export const metadata: Metadata = {
-  title: 'Dental Surgery New York',
-  description:
-    'Independent oral surgery guidance for New York patients seeking clearer procedure, cost, and decision information.',
+  title: SITE_NAME,
+  description: SITE_DESCRIPTION,
 }
 
 export default function RootLayout({
@@ -14,9 +15,24 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const organizationSchema = buildOrganizationSchema()
+  const websiteSchema = buildWebSiteSchema()
+
   return (
-    <html lang="en">
-      <body className="min-h-screen bg-white text-slate-900 antialiased">
+    <html lang={SITE_LANGUAGE}>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
         <SiteHeader />
         {children}
         <SiteFooter />

@@ -1,33 +1,31 @@
 import type { Metadata } from 'next'
+import { SITE_NAME, SITE_URL } from './site-config'
 
-type PageMetadataInput = {
+type BuildMetadataInput = {
   title: string
   description: string
-  path?: string
+  path: string
 }
-
-const SITE_NAME = 'Dental Surgery New York'
-const SITE_URL = 'https://dentalsurgerynewyork.com'
 
 export function buildMetadata({
   title,
   description,
-  path = '/',
-}: PageMetadataInput): Metadata {
-  const url = new URL(path, SITE_URL).toString()
+  path,
+}: BuildMetadataInput): Metadata {
+  const canonical = new URL(path, SITE_URL).toString()
 
   return {
     title,
     description,
     alternates: {
-      canonical: url,
+      canonical,
     },
     openGraph: {
+      type: 'website',
+      url: canonical,
+      siteName: SITE_NAME,
       title,
       description,
-      url,
-      siteName: SITE_NAME,
-      type: 'website',
     },
     twitter: {
       card: 'summary_large_image',

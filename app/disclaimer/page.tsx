@@ -1,24 +1,24 @@
-import { buildMetadata } from '@/lib/metadata'
-import PageShell from '@/components/page-shell'
-import { readTextContent } from '@/lib/content'
+import DisclaimerContent from '../../content/core/disclaimer.mdx'
+import PageShell from '../../components/page-shell'
+import { getRouteByPath } from '../../lib/content-index'
+import { buildMetadata } from '../../lib/metadata'
+
+const route = getRouteByPath('/disclaimer')
 
 export const metadata = buildMetadata({
-  title: 'Disclaimer | Dental Surgery New York',
-  description:
-    'Read the disclaimer for DentalSurgeryNewYork.com regarding informational use, medical advice, cost estimates, provider verification, and emergencies.',
-  path: '/disclaimer',
+  title: route.title,
+  description: route.description,
+  path: route.path,
 })
 
-export default async function DisclaimerPage() {
-  const content = await readTextContent('core/disclaimer.mdx')
-
+export default function DisclaimerPage() {
   return (
     <PageShell
       eyebrow="Notice"
       title="Disclaimer"
       intro="Important limits on how this site should be used."
     >
-      <article className="whitespace-pre-wrap text-slate-700">{content}</article>
+      <DisclaimerContent />
     </PageShell>
   )
 }

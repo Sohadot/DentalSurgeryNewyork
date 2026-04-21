@@ -11,3 +11,8 @@ const nextConfig: NextConfig = {
 }
 
 export default withMDX(nextConfig)
+const nextConfig: NextConfig = {
+  pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
+  reactStrictMode: true,
+  output: 'export',
+}

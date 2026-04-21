@@ -14,23 +14,12 @@ export default function PageShell({
   children,
 }: PageShellProps) {
   return (
-    <main className="bg-white">
-      <section className="mx-auto max-w-4xl px-6 py-16 md:py-24">
-        {eyebrow ? (
-          <div className="mb-4 text-xs font-medium uppercase tracking-[0.18em] text-slate-500">
-            {eyebrow}
-          </div>
-        ) : null}
-
-        <h1 className="font-serif text-4xl leading-tight tracking-tight text-slate-950 md:text-5xl">
-          {title}
-        </h1>
-
-        {intro ? (
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">{intro}</p>
-        ) : null}
-
-        <div className="mt-12 prose prose-slate max-w-none">{children}</div>
+    <main className="page-main">
+      <section className="container page-section">
+        {eyebrow ? <div className="page-eyebrow">{eyebrow}</div> : null}
+        <h1 className="page-title">{title}</h1>
+        {intro ? <p className="page-intro">{intro}</p> : null}
+        <div className="prose-wrap">{children}</div>
       </section>
     </main>
   )

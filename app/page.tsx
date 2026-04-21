@@ -1,90 +1,82 @@
 import Link from 'next/link'
-import TrustStrip from '@/components/trust-strip'
-import { buildMetadata } from '@/lib/metadata'
+import TrustStrip from '../components/trust-strip'
+import { getRouteByPath } from '../lib/content-index'
+import { buildMetadata } from '../lib/metadata'
+
+const route = getRouteByPath('/')
 
 export const metadata = buildMetadata({
-  title: 'Independent Oral Surgery Guidance for New York City',
-  description:
-    'Understand procedures, cost structures, surgeon-selection questions, and treatment decision factors through an editorially independent oral surgery reference built for New York patients.',
-  path: '/',
+  title: route.title,
+  description: route.description,
+  path: route.path,
 })
 
 export default function HomePage() {
   return (
     <main>
-      <section className="bg-slate-950 text-white">
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-2 md:py-28">
+      <section className="hero">
+        <div className="container hero-grid">
           <div>
-            <div className="mb-5 text-xs uppercase tracking-[0.18em] text-slate-300">
+            <div className="hero-overline">
               Independent Oral Surgery Reference · New York City
             </div>
 
-            <h1 className="font-serif text-4xl leading-tight tracking-tight md:text-6xl">
+            <h1 className="hero-title">
               Structured guidance for oral surgery decisions in New York City
             </h1>
 
-            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
+            <p className="hero-description">
               Understand procedures, cost structures, surgeon-selection questions,
               and treatment decision factors through an editorially independent oral
               surgery reference built for New York patients.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                href="/methodology"
-                className="bg-white px-5 py-3 text-sm font-medium text-slate-950 transition hover:bg-slate-100"
-              >
+            <div className="hero-actions">
+              <Link href="/methodology" className="button-primary">
                 Read Our Methodology
               </Link>
-              <Link
-                href="/disclaimer"
-                className="border border-slate-500 px-5 py-3 text-sm font-medium text-white transition hover:border-slate-300"
-              >
+              <Link href="/disclaimer" className="button-secondary">
                 Read Disclaimer
               </Link>
             </div>
           </div>
 
-          <div className="border border-slate-800 bg-slate-900">
-            <div className="border-b border-slate-800 px-6 py-4 text-xs uppercase tracking-[0.16em] text-slate-400">
-              Core Reference Areas
+          <aside className="hero-panel" aria-label="Core reference areas">
+            <div className="hero-panel-head">Core Reference Areas</div>
+            <div className="hero-panel-list">
+              <Link href="/procedures/dental-implants" className="hero-panel-link">
+                Dental Implants
+              </Link>
+              <Link href="/costs/dental-implants" className="hero-panel-link">
+                Dental Implant Cost
+              </Link>
+              <Link
+                href="/guides/choose-an-oral-surgeon"
+                className="hero-panel-link"
+              >
+                Choosing an Oral Surgeon
+              </Link>
+              <Link href="/methodology" className="hero-panel-link">
+                Methodology
+              </Link>
             </div>
-
-            <div className="grid">
-              {[
-                ['/procedures/dental-implants', 'Dental Implants'],
-                ['/costs/dental-implants', 'Dental Implant Cost'],
-                ['/guides/choose-an-oral-surgeon', 'Choosing an Oral Surgeon'],
-                ['/methodology', 'Methodology'],
-              ].map(([href, label]) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="border-b border-slate-800 px-6 py-5 text-slate-200 transition hover:bg-slate-800"
-                >
-                  {label}
-                </Link>
-              ))}
-            </div>
-          </div>
+          </aside>
         </div>
       </section>
 
       <TrustStrip />
 
-      <section className="mx-auto max-w-7xl px-6 py-16 md:py-24">
-        <div className="max-w-3xl">
-          <div className="text-xs uppercase tracking-[0.18em] text-slate-500">
-            What this asset is
-          </div>
-          <h2 className="mt-4 font-serif text-3xl tracking-tight text-slate-950 md:text-4xl">
+      <section className="container home-section">
+        <div className="home-copy-block">
+          <div className="page-eyebrow">What this asset is</div>
+          <h2 className="section-title">
             A patient-first reference, not a disguised sales funnel
           </h2>
-          <p className="mt-6 text-lg leading-8 text-slate-700">
+          <p className="section-paragraph">
             DentalSurgeryNewYork.com is being built to improve decision clarity in a
-            category where treatment framing, provider positioning, and pricing logic
-            are often difficult to interpret. The site is structured to explain, not
-            to pressure.
+            category where treatment framing, provider positioning, and pricing
+            logic are often difficult to interpret. The site is structured to
+            explain, not to pressure.
           </p>
         </div>
       </section>

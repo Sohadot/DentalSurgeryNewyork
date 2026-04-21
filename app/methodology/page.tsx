@@ -1,24 +1,24 @@
-import { buildMetadata } from '@/lib/metadata'
-import PageShell from '@/components/page-shell'
-import { readTextContent } from '@/lib/content'
+import MethodologyContent from '../../content/core/methodology.mdx'
+import PageShell from '../../components/page-shell'
+import { getRouteByPath } from '../../lib/content-index'
+import { buildMetadata } from '../../lib/metadata'
+
+const route = getRouteByPath('/methodology')
 
 export const metadata = buildMetadata({
-  title: 'Methodology | Dental Surgery New York',
-  description:
-    'Learn how DentalSurgeryNewYork.com researches procedure guidance, cost information, and patient decision content for oral surgery in New York.',
-  path: '/methodology',
+  title: route.title,
+  description: route.description,
+  path: route.path,
 })
 
-export default async function MethodologyPage() {
-  const content = await readTextContent('core/methodology.mdx')
-
+export default function MethodologyPage() {
   return (
     <PageShell
       eyebrow="Methodology"
       title="Our Methodology"
       intro="How this reference approaches procedure explanation, cost guidance, and patient decision support."
     >
-      <article className="whitespace-pre-wrap text-slate-700">{content}</article>
+      <MethodologyContent />
     </PageShell>
   )
 }

@@ -14,10 +14,7 @@
   min-height: 60vh;
 }
 
-.page-section {
-  padding-block: var(--space-8);
-}
-
+.page-section,
 .home-section {
   padding-block: var(--space-8);
 }

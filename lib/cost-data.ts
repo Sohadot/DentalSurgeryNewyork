@@ -6,14 +6,13 @@ export type CostSourceType =
   | 'public-local-anchor'
   | 'payer-baseline'
   | 'institutional-public-facing-care-pathway'
-  | string
 
 export type DirectionalRange = {
   min?: number
   max?: number
   value?: number
   scope: string
-  source_type: CostSourceType
+  source_type: CostSourceType | string
 }
 
 export type CoverageContext = {
@@ -46,258 +45,154 @@ export type CostData = {
   publication_standard: PublicationStandard
 }
 
-function isRecord(value: unknown): value is Record<string, unknown> {
+function isObject(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null
 }
 
-function isNonEmptyString(value: unknown): value is string {
-  return typeof value === 'string' && value.trim().length > 0
-}
-
-function isFiniteNumber(value: unknown): value is number {
+function isNumber(value: unknown): value is number {
   return typeof value === 'number' && Number.isFinite(value)
 }
 
-function parseDirectionalRange(
+function isString(value: unknown): value is string {
+  return typeof value === 'string' && value.trim().length > 0
+}
+
+function assertDirectionalRange(
   value: unknown,
-  procedure: string,
-  key: string
-): DirectionalRange {
-  if (!isRecord(value)) {
-    throw new Error(`Invalid directional range object for ${procedure}: ${key}`)
+  key: string,
+  procedure: string
+): asserts value is DirectionalRange {
+  if (!isObject(value)) {
+    throw new Error(`Invalid directional range for ${procedure}: ${key}`)
   }
 
-  const { min, max, value: exactValue, scope, source_type } = value
+  const hasMin = isNumber(value.min)
+  const hasMax = isNumber(value.max)
+  const hasValue = isNumber(value.value)
 
-  const hasMin = isFiniteNumber(min)
-  const hasMax = isFiniteNumber(max)
-  const hasValue = isFiniteNumber(exactValue)
-
-  if (!hasValue && !hasMin && !hasMax) {
+  if (!hasValue && !(hasMin || hasMax)) {
     throw new Error(
       `Directional range must include value or min/max for ${procedure}: ${key}`
     )
   }
 
-  if (!isNonEmptyString(scope)) {
+  if (!isString(value.scope)) {
     throw new Error(`Directional range missing scope for ${procedure}: ${key}`)
   }
 
-  if (!isNonEmptyString(source_type)) {
+  if (!isString(value.source_type)) {
     throw new Error(
       `Directional range missing source_type for ${procedure}: ${key}`
     )
   }
-
-  if (hasMin && min <= 0) {
-    throw new Error(`Directional range min must be positive for ${procedure}: ${key}`)
-  }
-
-  if (hasMax && max <= 0) {
-    throw new Error(`Directional range max must be positive for ${procedure}: ${key}`)
-  }
-
-  if (hasValue && exactValue <= 0) {
-    throw new Error(
-      `Directional range value must be positive for ${procedure}: ${key}`
-    )
-  }
-
-  if (hasMin && hasMax && min > max) {
-    throw new Error(
-      `Directional range min cannot exceed max for ${procedure}: ${key}`
-    )
-  }
-
-  return {
-    ...(hasMin ? { min } : {}),
-    ...(hasMax ? { max } : {}),
-    ...(hasValue ? { value: exactValue } : {}),
-    scope,
-    source_type,
-  }
 }
 
-function parseCoverageContext(
-  value: unknown,
-  procedure: string
-): CoverageContext | undefined {
-  if (value === undefined) {
-    return undefined
-  }
-
-  if (!isRecord(value)) {
-    throw new Error(`Invalid coverage_context for ${procedure}`)
-  }
-
-  const {
-    new_york_medicaid_implants_medically_necessary,
-    effective_date,
-    note,
-  } = value
-
-  if (
-    typeof new_york_medicaid_implants_medically_necessary !== 'boolean' ||
-    !isNonEmptyString(effective_date) ||
-    !isNonEmptyString(note)
-  ) {
-    throw new Error(`Invalid coverage_context shape for ${procedure}`)
-  }
-
-  return {
-    new_york_medicaid_implants_medically_necessary,
-    effective_date,
-    note,
-  }
-}
-
-function parseInstitutionalAccessPathways(
-  value: unknown,
-  procedure: string
-): InstitutionalAccessPathway[] | undefined {
-  if (value === undefined) {
-    return undefined
-  }
-
-  if (!Array.isArray(value)) {
-    throw new Error(`institutional_access_pathways must be an array for ${procedure}`)
-  }
-
-  return value.map((item, index) => {
-    if (!isRecord(item)) {
-      throw new Error(
-        `Invalid institutional access pathway object for ${procedure} at index ${index}`
-      )
-    }
-
-    const { name, type, notes } = item
-
-    if (!isNonEmptyString(name) || !isNonEmptyString(type)) {
-      throw new Error(
-        `Institutional access pathway missing name/type for ${procedure} at index ${index}`
-      )
-    }
-
-    if (!Array.isArray(notes) || !notes.every(isNonEmptyString)) {
-      throw new Error(
-        `Institutional access pathway notes invalid for ${procedure} at index ${index}`
-      )
-    }
-
-    return {
-      name,
-      type,
-      notes,
-    }
-  })
-}
-
-function parsePublicationStandard(
-  value: unknown,
-  procedure: string
-): PublicationStandard {
-  if (!isRecord(value)) {
-    throw new Error(`Invalid publication_standard for ${procedure}`)
-  }
-
-  const {
-    is_quote,
-    is_directional_context,
-    requires_written_estimate,
-  } = value
-
-  if (
-    typeof is_quote !== 'boolean' ||
-    typeof is_directional_context !== 'boolean' ||
-    typeof requires_written_estimate !== 'boolean'
-  ) {
-    throw new Error(`Invalid publication_standard shape for ${procedure}`)
-  }
-
-  return {
-    is_quote,
-    is_directional_context,
-    requires_written_estimate,
-  }
-}
-
-function parseCostData(raw: unknown): CostData {
-  if (!isRecord(raw)) {
+function assertCostData(value: unknown): asserts value is CostData {
+  if (!isObject(value)) {
     throw new Error('Cost data must be an object')
   }
 
-  const {
-    procedure,
-    market,
-    currency,
-    last_reviewed,
-    directional_ranges,
-    cost_drivers,
-    coverage_context,
-    institutional_access_pathways,
-    publication_standard,
-  } = raw
-
-  if (!isNonEmptyString(procedure)) {
+  if (!isString(value.procedure)) {
     throw new Error('Cost data missing procedure')
   }
 
-  if (!isNonEmptyString(market)) {
-    throw new Error(`Cost data missing market for ${procedure}`)
+  if (!isString(value.market)) {
+    throw new Error(`Cost data missing market for ${value.procedure}`)
   }
 
-  if (!isNonEmptyString(currency)) {
-    throw new Error(`Cost data missing currency for ${procedure}`)
+  if (!isString(value.currency)) {
+    throw new Error(`Cost data missing currency for ${value.procedure}`)
   }
 
-  if (!isNonEmptyString(last_reviewed)) {
-    throw new Error(`Cost data missing last_reviewed for ${procedure}`)
+  if (!isString(value.last_reviewed)) {
+    throw new Error(`Cost data missing last_reviewed for ${value.procedure}`)
   }
 
-  if (!isRecord(directional_ranges)) {
-    throw new Error(`Cost data missing directional_ranges for ${procedure}`)
+  if (!isObject(value.directional_ranges)) {
+    throw new Error(`Cost data missing directional_ranges for ${value.procedure}`)
   }
 
-  if (!Array.isArray(cost_drivers) || !cost_drivers.every(isNonEmptyString)) {
-    throw new Error(`Cost data missing or invalid cost_drivers for ${procedure}`)
+  for (const [key, range] of Object.entries(value.directional_ranges)) {
+    assertDirectionalRange(range, key, value.procedure)
   }
 
-  const parsedRanges: Record<string, DirectionalRange> = {}
-  for (const [key, value] of Object.entries(directional_ranges)) {
-    parsedRanges[key] = parseDirectionalRange(value, procedure, key)
+  if (!Array.isArray(value.cost_drivers) || value.cost_drivers.length === 0) {
+    throw new Error(`Cost data missing cost_drivers for ${value.procedure}`)
   }
 
-  return {
-    procedure,
-    market,
-    currency,
-    last_reviewed,
-    directional_ranges: parsedRanges,
-    cost_drivers,
-    coverage_context: parseCoverageContext(coverage_context, procedure),
-    institutional_access_pathways: parseInstitutionalAccessPathways(
-      institutional_access_pathways,
-      procedure
-    ),
-    publication_standard: parsePublicationStandard(publication_standard, procedure),
+  if (!value.cost_drivers.every(isString)) {
+    throw new Error(`Invalid cost_drivers for ${value.procedure}`)
+  }
+
+  if (!isObject(value.publication_standard)) {
+    throw new Error(`Cost data missing publication_standard for ${value.procedure}`)
+  }
+
+  const publicationStandard = value.publication_standard
+  if (
+    typeof publicationStandard.is_quote !== 'boolean' ||
+    typeof publicationStandard.is_directional_context !== 'boolean' ||
+    typeof publicationStandard.requires_written_estimate !== 'boolean'
+  ) {
+    throw new Error(`Invalid publication_standard for ${value.procedure}`)
+  }
+
+  if (value.coverage_context !== undefined) {
+    if (!isObject(value.coverage_context)) {
+      throw new Error(`Invalid coverage_context for ${value.procedure}`)
+    }
+
+    const coverage = value.coverage_context
+    if (
+      typeof coverage.new_york_medicaid_implants_medically_necessary !==
+        'boolean' ||
+      !isString(coverage.effective_date) ||
+      !isString(coverage.note)
+    ) {
+      throw new Error(`Invalid coverage_context for ${value.procedure}`)
+    }
+  }
+
+  if (value.institutional_access_pathways !== undefined) {
+    if (!Array.isArray(value.institutional_access_pathways)) {
+      throw new Error(
+        `Invalid institutional_access_pathways for ${value.procedure}`
+      )
+    }
+
+    for (const pathway of value.institutional_access_pathways) {
+      if (!isObject(pathway)) {
+        throw new Error(
+          `Invalid institutional pathway object for ${value.procedure}`
+        )
+      }
+
+      if (!isString(pathway.name) || !isString(pathway.type)) {
+        throw new Error(
+          `Institutional pathway missing name/type for ${value.procedure}`
+        )
+      }
+
+      if (!Array.isArray(pathway.notes) || !pathway.notes.every(isString)) {
+        throw new Error(
+          `Institutional pathway notes invalid for ${value.procedure}`
+        )
+      }
+    }
   }
 }
 
-let dentalImplantsCache: CostData | null = null
-let wisdomToothRemovalCache: CostData | null = null
+function validateCostData(value: unknown): CostData {
+  assertCostData(value)
+  return value
+}
 
 export function getDentalImplantsCostData(): CostData {
-  if (!dentalImplantsCache) {
-    dentalImplantsCache = parseCostData(dentalImplantsRaw)
-  }
-  return dentalImplantsCache
+  return validateCostData(dentalImplantsRaw)
 }
 
 export function getWisdomToothRemovalCostData(): CostData {
-  if (!wisdomToothRemovalCache) {
-    wisdomToothRemovalCache = parseCostData(wisdomToothRemovalRaw)
-  }
-  return wisdomToothRemovalCache
+  return validateCostData(wisdomToothRemovalRaw)
 }
 
 export function formatUsd(amount: number): string {

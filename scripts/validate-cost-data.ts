@@ -1,75 +1,71 @@
-import fs from 'node:fs'
-import path from 'node:path'
-import { resolveProjectPath } from '../lib/content-index'
+import {
+  getDentalImplantsCostData,
+  getWisdomToothRemovalCostData,
+} from '../lib/cost-data'
 
-const DATA_DIR = resolveProjectPath('data/costs')
+function validateLastReviewed(dateString: string, procedure: string) {
+  const parsed = Date.parse(dateString)
 
-if (!fs.existsSync(DATA_DIR)) {
-  console.log('Cost data layer not yet initialized — skipping validate:cost-data.')
-  process.exit(0)
+  if (Number.isNaN(parsed)) {
+    throw new Error(`Invalid last_reviewed date for ${procedure}: ${dateString}`)
+  }
 }
 
-const files = fs
-  .readdirSync(DATA_DIR)
-  .filter((f) => f.endsWith('.json'))
+function validateProcedureShape(procedure: string) {
+  const data =
+    procedure === 'dental-implants'
+      ? getDentalImplantsCostData()
+      : getWisdomToothRemovalCostData()
 
-if (files.length === 0) {
-  console.log('No cost data files found — skipping validate:cost-data.')
-  process.exit(0)
+  validateLastReviewed(data.last_reviewed, data.procedure)
+
+  if (data.market !== 'New York City') {
+    throw new Error(
+      `Unexpected market for ${data.procedure}: ${data.market}`
+    )
+  }
+
+  if (data.currency !== 'USD') {
+    throw new Error(
+      `Unexpected currency for ${data.procedure}: ${data.currency}`
+    )
+  }
+
+  if (Object.keys(data.directional_ranges).length === 0) {
+    throw new Error(`No directional ranges found for ${data.procedure}`)
+  }
+
+  if (data.cost_drivers.length < 3) {
+    throw new Error(`Not enough cost drivers for ${data.procedure}`)
+  }
+
+  if (data.publication_standard.is_quote !== false) {
+    throw new Error(`${data.procedure} must not be marked as a quote`)
+  }
+
+  if (data.publication_standard.is_directional_context !== true) {
+    throw new Error(
+      `${data.procedure} must be marked as directional context`
+    )
+  }
+
+  if (data.publication_standard.requires_written_estimate !== true) {
+    throw new Error(
+      `${data.procedure} must require a written estimate`
+    )
+  }
 }
 
-const errors: string[] = []
-
-for (const file of files) {
-  const filePath = path.join(DATA_DIR, file)
-  let data: unknown
-
-  try {
-    data = JSON.parse(fs.readFileSync(filePath, 'utf8'))
-  } catch {
-    errors.push(`Invalid JSON: ${file}`)
-    continue
-  }
-
-  if (typeof data !== 'object' || data === null) {
-    errors.push(`Cost data file is not an object: ${file}`)
-    continue
-  }
-
-  const record = data as Record<string, unknown>
-
-  if (typeof record.procedure !== 'string' || record.procedure.trim() === '') {
-    errors.push(`Missing or empty "procedure" field: ${file}`)
-  }
-
-  if (typeof record.lastUpdated !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(record.lastUpdated)) {
-    errors.push(`Missing or invalid "lastUpdated" (expected YYYY-MM-DD): ${file}`)
-  }
-
-  if (typeof record.source !== 'string' || record.source.trim() === '') {
-    errors.push(`Missing or empty "source" field: ${file}`)
-  }
-
-  const ranges = record.ranges
-  if (
-    typeof ranges !== 'object' ||
-    ranges === null ||
-    typeof (ranges as Record<string, unknown>).low !== 'number' ||
-    typeof (ranges as Record<string, unknown>).high !== 'number'
-  ) {
-    errors.push(`Missing or invalid "ranges" (expected {low: number, high: number}): ${file}`)
+try {
+  validateProcedureShape('dental-implants')
+  validateProcedureShape('wisdom-tooth-removal')
+  console.log('Cost data validation passed.')
+} catch (error) {
+  console.error('Cost data validation failed.\n')
+  if (error instanceof Error) {
+    console.error(`- ${error.message}`)
   } else {
-    const { low, high } = ranges as { low: number; high: number }
-    if (low <= 0 || high <= 0 || low >= high) {
-      errors.push(`"ranges" values invalid (low must be < high, both > 0): ${file}`)
-    }
+    console.error('- Unknown validation error')
   }
-}
-
-if (errors.length > 0) {
-  console.error('Cost data validation failed:\n')
-  for (const error of errors) console.error(`- ${error}`)
   process.exit(1)
 }
-
-console.log(`Cost data validation passed. (${files.length} file(s) checked)`)

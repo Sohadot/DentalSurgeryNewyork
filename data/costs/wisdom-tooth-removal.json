@@ -11,7 +11,7 @@
     },
     "payer_facing_baseline_four_surgical_with_anesthesia": {
       "value": 3120,
-      "scope": "all four wisdom teeth below the gum line and up to one hour of general anesthesia",
+      "scope": "all four wisdom teeth below the gumline with up to one hour of general anesthesia",
       "source_type": "payer-baseline"
     },
     "payer_facing_baseline_four_non_surgical_fully_erupted": {

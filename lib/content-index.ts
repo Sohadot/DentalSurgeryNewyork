@@ -30,7 +30,7 @@ export const ROUTE_INDEX: RouteEntry[] = [
     path: '/',
     title: 'Independent Oral Surgery Guidance for New York City',
     description:
-      'Understand procedures, cost structures, surgeon-selection questions, and treatment decision factors through an editorially independent oral surgery reference built for New York patients.',
+      'Understand procedures, cost structures, surgeon-selection questions, and treatment factors through an independent oral surgery reference for New York patients.',
     section: 'home',
     routeFile: 'app/page.tsx',
     priority: 1,
@@ -90,7 +90,7 @@ export const ROUTE_INDEX: RouteEntry[] = [
   {
     path: '/procedures/dental-implants',
     title:
-      'Dental Implants in New York | Procedure Guide, Cost Factors, and What to Ask',
+      'Dental Implants in New York | Procedure Guide, Cost Factors, What to Ask',
     description:
       'Understand dental implants in New York, including what the procedure involves, major cost drivers, common misunderstandings, and questions to ask before treatment.',
     section: 'procedure',
@@ -103,7 +103,7 @@ export const ROUTE_INDEX: RouteEntry[] = [
   {
     path: '/procedures/wisdom-tooth-removal',
     title:
-      'Wisdom Tooth Removal in New York City | Procedure Guide, Cost Factors, and What to Know',
+      'Wisdom Tooth Removal NYC | Procedure Guide, Cost Factors, and What to Know',
     description:
       'Understand wisdom tooth removal in New York City, including simple vs surgical extraction, sedation questions, cost factors, and what to clarify before treatment.',
     section: 'procedure',
@@ -143,7 +143,7 @@ export const ROUTE_INDEX: RouteEntry[] = [
   {
     path: '/guides/choose-an-oral-surgeon',
     title:
-      'How to Choose an Oral Surgeon in New York | Credentials, Transparency, and What to Ask',
+      'How to Choose an Oral Surgeon in New York | Credentials and What to Ask',
     description:
       'Learn how to choose an oral surgeon in New York by understanding credentials, written estimates, anesthesia questions, and transparency standards.',
     section: 'guide',
@@ -169,7 +169,7 @@ export const ROUTE_INDEX: RouteEntry[] = [
   {
     path: '/guides/anesthesia-credentials-explained',
     title:
-      'Anesthesia Credentials Explained for Oral Surgery | What New York Patients Should Ask',
+      'Anesthesia Credentials for Oral Surgery | What NYC Patients Should Ask',
     description:
       'Understand what to ask about anesthesia credentials before oral surgery in New York, including sedation roles, monitoring, and why the structure matters.',
     section: 'guide',
@@ -183,7 +183,7 @@ export const ROUTE_INDEX: RouteEntry[] = [
   {
     path: '/locations',
     title:
-      'Oral Surgery in New York City | Borough Guides, Cost Context, and Decision Support',
+      'Oral Surgery in New York City | Borough Guides and Decision Support',
     description:
       'Explore oral surgery guidance across New York City, including borough-specific decision context, pricing interpretation, and provider-comparison considerations.',
     section: 'location',
@@ -235,7 +235,7 @@ export const ROUTE_INDEX: RouteEntry[] = [
   {
     path: '/locations/bronx',
     title:
-      'Oral Surgery in the Bronx | Cost Considerations, Access, and Decision Guidance',
+      'Oral Surgery in the Bronx | Cost, Access, and Decision Guidance',
     description:
       'Understand oral surgery decisions in the Bronx, including practical access questions, pricing interpretation, and provider-comparison guidance.',
     section: 'location',
@@ -248,7 +248,7 @@ export const ROUTE_INDEX: RouteEntry[] = [
   {
     path: '/locations/staten-island',
     title:
-      'Oral Surgery in Staten Island | Local Decision Context and Cost Interpretation',
+      'Oral Surgery in Staten Island | Local Decision and Cost Context',
     description:
       'Understand oral surgery decisions in Staten Island, including local provider context, treatment transparency, and how to compare options more carefully.',
     section: 'location',

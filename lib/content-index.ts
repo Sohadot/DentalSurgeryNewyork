@@ -6,15 +6,11 @@ export type RouteEntry = {
   path: string
   title: string
   description: string
-  section: 'core' | 'procedure' | 'cost' | 'guide' | 'home'
+  section: 'core' | 'procedure' | 'cost' | 'guide' | 'location' | 'question' | 'home'
   contentFile?: string
   routeFile: string
   priority: number
-  changeFrequency:
-    | 'daily'
-    | 'weekly'
-    | 'monthly'
-    | 'yearly'
+  changeFrequency: 'daily' | 'weekly' | 'monthly' | 'yearly'
   indexable: boolean
 }
 
@@ -80,8 +76,7 @@ export const ROUTE_INDEX: RouteEntry[] = [
   },
   {
     path: '/procedures/dental-implants',
-    title:
-      'Dental Implants in New York | Procedure Guide, Cost Factors, and What to Ask',
+    title: 'Dental Implants in New York | Procedure Guide, Cost Factors, and What to Ask',
     description:
       'Understand dental implants in New York, including what the procedure involves, major cost drivers, common misunderstandings, and questions to ask before treatment.',
     section: 'procedure',
@@ -93,8 +88,7 @@ export const ROUTE_INDEX: RouteEntry[] = [
   },
   {
     path: '/costs/dental-implants',
-    title:
-      'Dental Implant Cost in New York | What the Price Often Includes and Omits',
+    title: 'Dental Implant Cost in New York | What the Price Often Includes and Omits',
     description:
       'Learn how dental implant cost works in New York, including the components of treatment, what low advertised pricing may leave out, and what to request in writing.',
     section: 'cost',
@@ -106,14 +100,97 @@ export const ROUTE_INDEX: RouteEntry[] = [
   },
   {
     path: '/guides/choose-an-oral-surgeon',
-    title:
-      'How to Choose an Oral Surgeon in New York | Credentials, Transparency, and What to Ask',
+    title: 'How to Choose an Oral Surgeon in New York | Credentials, Transparency, and What to Ask',
     description:
       'Learn how to choose an oral surgeon in New York by understanding credentials, written estimates, anesthesia questions, and transparency standards.',
     section: 'guide',
     contentFile: 'content/guides/choose-an-oral-surgeon.mdx',
     routeFile: 'app/guides/choose-an-oral-surgeon/page.tsx',
     priority: 0.85,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/locations',
+    title: 'Oral Surgery in New York City | Borough Guides, Cost Context, and Decision Support',
+    description:
+      'Explore oral surgery guidance across New York City, including borough-specific decision context, pricing interpretation, and provider-comparison considerations.',
+    section: 'location',
+    contentFile: 'content/locations/index.mdx',
+    routeFile: 'app/locations/page.tsx',
+    priority: 0.8,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/locations/manhattan',
+    title: 'Oral Surgery in Manhattan | Cost, Provider Comparison, and What to Consider',
+    description:
+      'Understand oral surgery decisions in Manhattan, including pricing context, provider comparison issues, transparency questions, and how to evaluate options more carefully.',
+    section: 'location',
+    contentFile: 'content/locations/manhattan.mdx',
+    routeFile: 'app/locations/manhattan/page.tsx',
+    priority: 0.75,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/locations/brooklyn',
+    title: 'Oral Surgery in Brooklyn | Cost, Transparency, and How to Compare Options',
+    description:
+      'Understand oral surgery decisions in Brooklyn, including local pricing context, treatment transparency, and how to compare providers more carefully.',
+    section: 'location',
+    contentFile: 'content/locations/brooklyn.mdx',
+    routeFile: 'app/locations/brooklyn/page.tsx',
+    priority: 0.75,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/locations/queens',
+    title: 'Oral Surgery in Queens | Cost Context, Provider Structure, and What to Ask',
+    description:
+      'Explore oral surgery decisions in Queens, including pricing variation, provider structure, and the questions that matter before treatment.',
+    section: 'location',
+    contentFile: 'content/locations/queens.mdx',
+    routeFile: 'app/locations/queens/page.tsx',
+    priority: 0.75,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/locations/bronx',
+    title: 'Oral Surgery in the Bronx | Cost Considerations, Access, and Decision Guidance',
+    description:
+      'Understand oral surgery decisions in the Bronx, including practical access questions, pricing interpretation, and provider-comparison guidance.',
+    section: 'location',
+    contentFile: 'content/locations/bronx.mdx',
+    routeFile: 'app/locations/bronx/page.tsx',
+    priority: 0.72,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/locations/staten-island',
+    title: 'Oral Surgery in Staten Island | Local Decision Context and Cost Interpretation',
+    description:
+      'Understand oral surgery decisions in Staten Island, including local provider context, treatment transparency, and how to compare options more carefully.',
+    section: 'location',
+    contentFile: 'content/locations/staten-island.mdx',
+    routeFile: 'app/locations/staten-island/page.tsx',
+    priority: 0.7,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-included-in-implant-cost',
+    title: 'What Is Included in Dental Implant Cost? | A New York Patient Guide',
+    description:
+      'Learn what a dental implant quote may or may not include in New York, from the implant post to the crown, imaging, grafting, and follow-up care.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-included-in-implant-cost.mdx',
+    routeFile: 'app/questions/what-is-included-in-implant-cost/page.tsx',
+    priority: 0.75,
     changeFrequency: 'weekly',
     indexable: true,
   },
@@ -142,9 +219,7 @@ export function resolveProjectPath(relativePath: string): string {
 }
 
 export function getRouteLastModified(entry: RouteEntry): Date {
-  const candidates = [entry.contentFile, entry.routeFile].filter(
-    Boolean
-  ) as string[]
+  const candidates = [entry.contentFile, entry.routeFile].filter(Boolean) as string[]
 
   const mtimes = candidates
     .map((file) => resolveProjectPath(file))

@@ -87,6 +87,18 @@ export const ROUTE_INDEX: RouteEntry[] = [
     indexable: true,
   },
   {
+    path: '/procedures/wisdom-tooth-removal',
+    title: 'Wisdom Tooth Removal in New York City | Procedure Guide, Cost Factors, and What to Know',
+    description:
+      'Understand wisdom tooth removal in New York City, including simple vs surgical extraction, sedation questions, cost factors, and what to clarify before treatment.',
+    section: 'procedure',
+    contentFile: 'content/procedures/wisdom-tooth-removal.mdx',
+    routeFile: 'app/procedures/wisdom-tooth-removal/page.tsx',
+    priority: 0.88,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
     path: '/costs/dental-implants',
     title: 'Dental Implant Cost in New York | What the Price Often Includes and Omits',
     description:
@@ -99,6 +111,18 @@ export const ROUTE_INDEX: RouteEntry[] = [
     indexable: true,
   },
   {
+    path: '/costs/wisdom-tooth-removal',
+    title: 'Wisdom Tooth Removal Cost in NYC | What Changes the Price',
+    description:
+      'Understand wisdom tooth removal cost in New York City, including simple vs surgical extraction, sedation, imaging, and how to compare estimates more carefully.',
+    section: 'cost',
+    contentFile: 'content/costs/wisdom-tooth-removal.mdx',
+    routeFile: 'app/costs/wisdom-tooth-removal/page.tsx',
+    priority: 0.86,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
     path: '/guides/choose-an-oral-surgeon',
     title: 'How to Choose an Oral Surgeon in New York | Credentials, Transparency, and What to Ask',
     description:
@@ -107,6 +131,30 @@ export const ROUTE_INDEX: RouteEntry[] = [
     contentFile: 'content/guides/choose-an-oral-surgeon.mdx',
     routeFile: 'app/guides/choose-an-oral-surgeon/page.tsx',
     priority: 0.85,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/guides/questions-to-ask-before-surgery',
+    title: 'Questions to Ask Before Oral Surgery in New York | A Patient Decision Guide',
+    description:
+      'Learn which questions to ask before oral surgery in New York, including treatment scope, anesthesia, cost structure, follow-up care, and provider transparency.',
+    section: 'guide',
+    contentFile: 'content/guides/questions-to-ask-before-surgery.mdx',
+    routeFile: 'app/guides/questions-to-ask-before-surgery/page.tsx',
+    priority: 0.8,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/guides/anesthesia-credentials-explained',
+    title: 'Anesthesia Credentials Explained for Oral Surgery | What New York Patients Should Ask',
+    description:
+      'Understand what to ask about anesthesia credentials before oral surgery in New York, including sedation roles, monitoring, and why the structure matters.',
+    section: 'guide',
+    contentFile: 'content/guides/anesthesia-credentials-explained.mdx',
+    routeFile: 'app/guides/anesthesia-credentials-explained/page.tsx',
+    priority: 0.78,
     changeFrequency: 'weekly',
     indexable: true,
   },
@@ -191,6 +239,18 @@ export const ROUTE_INDEX: RouteEntry[] = [
     contentFile: 'content/questions/what-is-included-in-implant-cost.mdx',
     routeFile: 'app/questions/what-is-included-in-implant-cost/page.tsx',
     priority: 0.75,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/how-long-does-wisdom-tooth-recovery-take',
+    title: 'How Long Does Wisdom Tooth Recovery Take? | What NYC Patients Should Know',
+    description:
+      'Understand what affects wisdom tooth recovery time, including extraction complexity, swelling, sedation, aftercare, and why recovery varies from case to case.',
+    section: 'question',
+    contentFile: 'content/questions/how-long-does-wisdom-tooth-recovery-take.mdx',
+    routeFile: 'app/questions/how-long-does-wisdom-tooth-recovery-take/page.tsx',
+    priority: 0.76,
     changeFrequency: 'weekly',
     indexable: true,
   },

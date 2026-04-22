@@ -9,7 +9,8 @@
     "validate:content": "tsx scripts/validate-content.ts",
     "validate:routes": "tsx scripts/validate-routes.ts",
     "validate:seo": "tsx scripts/validate-seo.ts",
-    "validate": "npm run typecheck && npm run validate:content && npm run validate:routes && npm run validate:seo",
+    "validate:cost-data": "tsx scripts/validate-cost-data.ts",
+    "validate": "npm run typecheck && npm run validate:content && npm run validate:routes && npm run validate:seo && npm run validate:cost-data",
     "build:index": "tsx scripts/build-content-index.ts",
     "build:sitemap-manifest": "tsx scripts/build-sitemap-manifest.ts",
     "refresh:reference-data": "npm run build:index && npm run build:sitemap-manifest",
@@ -17,6 +18,7 @@
     "build": "next build"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.1.0",
     "@next/mdx": "^16.2.2",
     "next": "^16.2.2",
     "react": "^19.2.0",

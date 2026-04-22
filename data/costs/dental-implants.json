@@ -1,0 +1,50 @@
+{
+  "procedure": "dental-implants",
+  "market": "New York City",
+  "currency": "USD",
+  "last_reviewed": "2026-04-22",
+  "directional_ranges": {
+    "professional_baseline_total_single_tooth": {
+      "min": 3100,
+      "max": 5800,
+      "scope": "implant, abutment, crown, and other necessary procedures",
+      "source_type": "professional-association-baseline"
+    },
+    "public_manhattan_anchor_single_tooth": {
+      "min": 3000,
+      "max": 6000,
+      "scope": "single tooth implant including implant post, abutment, and crown",
+      "source_type": "public-local-anchor"
+    }
+  },
+  "cost_drivers": [
+    "consultation and imaging",
+    "extraction before implant placement",
+    "bone grafting or other preparatory work",
+    "implant post",
+    "abutment",
+    "final crown or restoration",
+    "sedation or anesthesia",
+    "provider structure and borough overhead"
+  ],
+  "coverage_context": {
+    "new_york_medicaid_implants_medically_necessary": true,
+    "effective_date": "2024-01-31",
+    "note": "Coverage is not universal and depends on clinical criteria and authorization."
+  },
+  "institutional_access_pathways": [
+    {
+      "name": "NYU College of Dentistry",
+      "type": "institutional-public-facing-care-pathway",
+      "notes": [
+        "Provides dental implant care",
+        "Accepts Medicaid"
+      ]
+    }
+  ],
+  "publication_standard": {
+    "is_quote": false,
+    "is_directional_context": true,
+    "requires_written_estimate": true
+  }
+}

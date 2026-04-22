@@ -1,0 +1,35 @@
+{
+  "name": "dental-surgery-new-york",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "typecheck": "tsc --noEmit",
+    "validate:content": "tsx scripts/validate-content.ts",
+    "validate:routes": "tsx scripts/validate-routes.ts",
+    "validate:seo": "tsx scripts/validate-seo.ts",
+    "validate": "npm run typecheck && npm run validate:content && npm run validate:routes && npm run validate:seo",
+    "build:index": "tsx scripts/build-content-index.ts",
+    "build:sitemap-manifest": "tsx scripts/build-sitemap-manifest.ts",
+    "refresh:reference-data": "npm run build:index && npm run build:sitemap-manifest",
+    "prebuild": "npm run validate && npm run refresh:reference-data",
+    "build": "next build"
+  },
+  "dependencies": {
+    "@next/mdx": "^16.2.4",
+    "next": "^16.2.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tsx": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}

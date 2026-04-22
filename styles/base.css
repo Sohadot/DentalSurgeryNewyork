@@ -1,3 +1,7 @@
+:root {
+  color-scheme: light;
+}
+
 *,
 *::before,
 *::after {
@@ -17,6 +21,13 @@ body {
   font-family: var(--font-serif);
   line-height: 1.65;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(184, 158, 91, 0.18);
+  color: var(--color-text);
 }
 
 a {
@@ -26,7 +37,8 @@ a {
 
 img,
 svg,
-video {
+video,
+canvas {
   display: block;
   max-width: 100%;
 }
@@ -36,4 +48,62 @@ input,
 textarea,
 select {
   font: inherit;
+}
+
+button {
+  border: 0;
+  background: none;
+  color: inherit;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+hr {
+  border: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0,
+      transparent calc(50% - 620px),
+      rgba(15, 23, 42, 0.018) calc(50% - 620px),
+      rgba(15, 23, 42, 0.018) calc(50% - 619px),
+      transparent calc(50% - 619px),
+      transparent calc(50% + 619px),
+      rgba(15, 23, 42, 0.018) calc(50% + 619px),
+      rgba(15, 23, 42, 0.018) calc(50% + 620px),
+      transparent calc(50% + 620px)
+    );
+  opacity: 0.6;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }

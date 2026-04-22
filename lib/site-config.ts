@@ -10,6 +10,7 @@ export const PRIMARY_NAV = [
   { href: '/procedures/dental-implants', label: 'Procedures' },
   { href: '/costs/dental-implants', label: 'Cost Guides' },
   { href: '/guides/choose-an-oral-surgeon', label: 'Decision Guides' },
+  { href: '/locations', label: 'Locations' },
 ] as const
 
 export const TRUST_SIGNALS = [

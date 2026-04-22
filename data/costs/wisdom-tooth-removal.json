@@ -1,0 +1,43 @@
+{
+  "procedure": "wisdom-tooth-removal",
+  "market": "New York City",
+  "currency": "USD",
+  "last_reviewed": "2026-04-22",
+  "directional_ranges": {
+    "payer_facing_baseline_single_surgical_impacted_tooth": {
+      "value": 550,
+      "scope": "single wisdom tooth below the gumline",
+      "source_type": "payer-baseline"
+    },
+    "payer_facing_baseline_four_surgical_with_anesthesia": {
+      "value": 3120,
+      "scope": "all four wisdom teeth below the gumline with up to one hour of general anesthesia",
+      "source_type": "payer-baseline"
+    },
+    "payer_facing_baseline_four_non_surgical_fully_erupted": {
+      "value": 720,
+      "scope": "all four wisdom teeth fully erupted, non-surgical removal",
+      "source_type": "payer-baseline"
+    },
+    "public_manhattan_anchor_total_case": {
+      "min": 1000,
+      "max": 3000,
+      "scope": "typical Manhattan public estimate depending on complexity",
+      "source_type": "public-local-anchor"
+    }
+  },
+  "cost_drivers": [
+    "simple versus surgical extraction",
+    "erupted versus impacted position",
+    "one tooth versus multiple teeth",
+    "imaging requirements",
+    "local anesthesia versus sedation or general anesthesia",
+    "practice setting and borough",
+    "medications and follow-up structure"
+  ],
+  "publication_standard": {
+    "is_quote": false,
+    "is_directional_context": true,
+    "requires_written_estimate": true
+  }
+}

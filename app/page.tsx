@@ -27,16 +27,16 @@ export default function HomePage() {
 
             <p className="hero-description">
               Understand procedures, cost structures, surgeon-selection questions,
-              and treatment decision factors through an editorially independent oral
-              surgery reference built for New York patients.
+              treatment decision factors, and borough-level context through an
+              editorially independent oral surgery reference built for New York patients.
             </p>
 
             <div className="hero-actions">
               <Link href="/methodology" className="button-primary">
                 Read Our Methodology
               </Link>
-              <Link href="/disclaimer" className="button-secondary">
-                Read Disclaimer
+              <Link href="/locations" className="button-secondary">
+                Explore Borough Guides
               </Link>
             </div>
           </div>
@@ -50,14 +50,11 @@ export default function HomePage() {
               <Link href="/costs/dental-implants" className="hero-panel-link">
                 Dental Implant Cost
               </Link>
-              <Link
-                href="/guides/choose-an-oral-surgeon"
-                className="hero-panel-link"
-              >
+              <Link href="/guides/choose-an-oral-surgeon" className="hero-panel-link">
                 Choosing an Oral Surgeon
               </Link>
-              <Link href="/methodology" className="hero-panel-link">
-                Methodology
+              <Link href="/locations" className="hero-panel-link">
+                New York City Borough Guides
               </Link>
             </div>
           </aside>
@@ -73,7 +70,7 @@ export default function HomePage() {
             A patient-first reference, not a disguised sales funnel
           </h2>
           <p className="section-paragraph">
-            DentalSurgeryNewYork.com is being built to improve decision clarity in a
+            DentalSurgeryNewYork.com is built to improve decision clarity in a
             category where treatment framing, provider positioning, and pricing
             logic are often difficult to interpret. The site is structured to
             explain, not to pressure.

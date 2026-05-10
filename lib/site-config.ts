@@ -11,6 +11,7 @@ export const PRIMARY_NAV = [
   { href: '/costs/dental-implants', label: 'Cost Guides' },
   { href: '/guides/choose-an-oral-surgeon', label: 'Decision Guides' },
   { href: '/locations', label: 'Locations' },
+  { href: '/partners', label: 'Partner Program' },
 ] as const
 
 export const TRUST_SIGNALS = [

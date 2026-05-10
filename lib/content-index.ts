@@ -5,6 +5,7 @@ import { SITE_URL } from './site-config'
 export type RouteSection =
   | 'home'
   | 'core'
+  | 'commercial'
   | 'procedure'
   | 'cost'
   | 'guide'
@@ -83,6 +84,18 @@ export const ROUTE_INDEX: RouteEntry[] = [
     contentFile: 'content/core/disclaimer.mdx',
     routeFile: 'app/disclaimer/page.tsx',
     priority: 0.5,
+    changeFrequency: 'monthly',
+    indexable: true,
+  },
+
+  {
+    path: '/partners',
+    title: 'Partner Practice Program | Dental Surgery New York',
+    description:
+      'Licensed oral surgery and dental implant practices in New York can apply for transparent partner placement within this independent patient guidance platform.',
+    section: 'commercial',
+    routeFile: 'app/partners/page.tsx',
+    priority: 0.6,
     changeFrequency: 'monthly',
     indexable: true,
   },

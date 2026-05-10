@@ -19,6 +19,7 @@ export default function SiteFooter() {
           <Link href="/independence-policy">Independence Policy</Link>
           <Link href="/accuracy-policy">Accuracy Policy</Link>
           <Link href="/disclaimer">Disclaimer</Link>
+          <Link href="/partners">Partner Practice Program</Link>
         </div>
       </div>
     </footer>

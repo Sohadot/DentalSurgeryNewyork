@@ -21,7 +21,7 @@ const TIERS = [
       'Visible in your relevant borough section',
       'Outbound link to your practice website',
       'Contact information displayed',
-      'Clear "Partner Practice" disclosure label',
+      'Clear “Partner Practice” disclosure label',
     ],
     note: 'Suitable for founding partners. No traffic guarantees. No clinical claims.',
     featured: false,
@@ -35,6 +35,7 @@ const TIERS = [
     includes: [
       'Everything in Verified Practice Presence',
       'Visible on relevant procedure pages',
+      'Visible on relevant cost guide pages',
       'Visible on relevant borough pages',
       'Monthly impression and click report',
       'Priority review for new content sections',
@@ -47,10 +48,10 @@ const TIERS = [
     price: 'From $2,500',
     period: 'per month',
     description:
-      'Limited sponsorship of a specific procedure or borough section, with underwritten guide option.',
+      'Limited sponsorship of a specific procedure, cost guide, or borough section, with underwritten guide option.',
     includes: [
       'Everything in Reference Partner',
-      'Named sponsorship of a procedure or borough section',
+      'Named sponsorship of a procedure, cost guide, or borough section',
       'Option to underwrite a relevant educational guide',
       'Monthly aggregated demand intelligence report',
       'Limited availability — reviewed individually',
@@ -71,7 +72,7 @@ const PRINCIPLES = [
   },
   {
     heading: 'No clinical ranking is sold',
-    body: 'Placement does not make a practice "best," "recommended," or "preferred" in any clinical sense. The site does not compare clinical outcomes.',
+    body: 'Placement does not make a practice “best,” “recommended,” or “preferred” in any clinical sense. The site does not compare clinical outcomes.',
   },
   {
     heading: 'No pay-per-patient structure',
@@ -115,6 +116,11 @@ export default function PartnersPage() {
             reference — alongside clear disclosure of the commercial
             relationship. Patients see who the partners are. Partners do not
             control what patients read.
+          </p>
+          <p className="partners-body-text">
+            Placement surfaces include procedure guides, cost guides, and borough
+            location pages. Reference Partners and Category Sponsors are visible
+            across all relevant content surfaces within their tier.
           </p>
         </div>
       </section>

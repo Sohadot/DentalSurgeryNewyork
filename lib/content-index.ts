@@ -101,6 +101,17 @@ export const ROUTE_INDEX: RouteEntry[] = [
   },
 
   {
+    path: '/procedures',
+    title: 'Oral Surgery Procedures | New York Patient Reference',
+    description:
+      'Independent patient-first guides to the oral surgery procedures most frequently encountered by New York patients, including procedure structure, cost factors, and questions to ask.',
+    section: 'procedure',
+    routeFile: 'app/procedures/page.tsx',
+    priority: 0.92,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
     path: '/procedures/dental-implants',
     title:
       'Dental Implants in New York | Procedure Guide, Cost Factors, What to Ask',
@@ -201,6 +212,58 @@ export const ROUTE_INDEX: RouteEntry[] = [
     contentFile: 'content/costs/wisdom-tooth-removal.mdx',
     routeFile: 'app/costs/wisdom-tooth-removal/page.tsx',
     priority: 0.86,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/costs/tooth-extraction',
+    title:
+      'Tooth Extraction Cost in New York | Simple vs. Surgical, Sedation, Socket Preservation',
+    description:
+      'Understand how simple vs. surgical extraction, sedation, imaging, and socket preservation affect tooth extraction cost in New York.',
+    section: 'cost',
+    contentFile: 'content/costs/tooth-extraction.mdx',
+    routeFile: 'app/costs/tooth-extraction/page.tsx',
+    priority: 0.84,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/costs/bone-grafting',
+    title:
+      'Bone Grafting Cost in New York | Socket Preservation, Ridge Augmentation, Sinus Lift',
+    description:
+      'Understand how graft type, material, membrane use, and sedation affect bone grafting cost in New York, from socket preservation through sinus lift procedures.',
+    section: 'cost',
+    contentFile: 'content/costs/bone-grafting.mdx',
+    routeFile: 'app/costs/bone-grafting/page.tsx',
+    priority: 0.83,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/costs/oral-surgery-sedation',
+    title:
+      'Oral Surgery Sedation Cost in New York | What Sedation Adds to Procedure Fees',
+    description:
+      'Understand how sedation type, procedure duration, and provider credentials affect sedation cost in New York oral surgery, and what to clarify before agreeing to treatment.',
+    section: 'cost',
+    contentFile: 'content/costs/oral-surgery-sedation.mdx',
+    routeFile: 'app/costs/oral-surgery-sedation/page.tsx',
+    priority: 0.82,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/costs/emergency-oral-surgery',
+    title:
+      'Emergency Oral Surgery Cost in New York | Urgent Fees, Imaging, and What to Ask',
+    description:
+      'Understand the cost structure of emergency oral surgery in New York, including urgent appointment fees, imaging, sedation, and what to clarify when contacting a provider.',
+    section: 'cost',
+    contentFile: 'content/costs/emergency-oral-surgery.mdx',
+    routeFile: 'app/costs/emergency-oral-surgery/page.tsx',
+    priority: 0.81,
     changeFrequency: 'weekly',
     indexable: true,
   },

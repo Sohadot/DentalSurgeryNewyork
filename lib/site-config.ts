@@ -7,7 +7,7 @@ export const SITE_LANGUAGE = 'en-US'
 
 export const PRIMARY_NAV = [
   { href: '/methodology', label: 'Methodology' },
-  { href: '/procedures/dental-implants', label: 'Procedures' },
+  { href: '/procedures', label: 'Procedures' },
   { href: '/costs/dental-implants', label: 'Cost Guides' },
   { href: '/guides/choose-an-oral-surgeon', label: 'Decision Guides' },
   { href: '/locations', label: 'Locations' },

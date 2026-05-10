@@ -126,6 +126,58 @@ export const ROUTE_INDEX: RouteEntry[] = [
     changeFrequency: 'weekly',
     indexable: true,
   },
+  {
+    path: '/procedures/tooth-extraction',
+    title:
+      'Tooth Extraction in New York | Simple vs Surgical, Cost Factors, and What to Ask',
+    description:
+      'Understand tooth extraction in New York, including the difference between simple and surgical removal, cost factors, what often follows extraction, and questions to ask before treatment.',
+    section: 'procedure',
+    contentFile: 'content/procedures/tooth-extraction.mdx',
+    routeFile: 'app/procedures/tooth-extraction/page.tsx',
+    priority: 0.87,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/procedures/bone-grafting',
+    title:
+      'Bone Grafting for Oral Surgery in New York | Socket Preservation, Ridge Augmentation, Sinus Lift',
+    description:
+      'Understand bone grafting procedures in New York, including socket preservation, ridge augmentation, and sinus lift, with cost factors and questions to ask before treatment.',
+    section: 'procedure',
+    contentFile: 'content/procedures/bone-grafting.mdx',
+    routeFile: 'app/procedures/bone-grafting/page.tsx',
+    priority: 0.85,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/procedures/oral-surgery-sedation',
+    title:
+      'Oral Surgery Sedation in New York | Types, Credentials, Cost, and Recovery',
+    description:
+      'Understand sedation options for oral surgery in New York, including types of sedation, provider credentials, cost structure, and what recovery looks like.',
+    section: 'procedure',
+    contentFile: 'content/procedures/oral-surgery-sedation.mdx',
+    routeFile: 'app/procedures/oral-surgery-sedation/page.tsx',
+    priority: 0.84,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/procedures/emergency-oral-surgery',
+    title:
+      'Emergency Oral Surgery in New York | When to Seek Urgent Care and What to Expect',
+    description:
+      'Understand emergency oral surgery situations in New York, including when to go to an ER vs an oral surgeon, infection warning signs, and urgent care considerations.',
+    section: 'procedure',
+    contentFile: 'content/procedures/emergency-oral-surgery.mdx',
+    routeFile: 'app/procedures/emergency-oral-surgery/page.tsx',
+    priority: 0.86,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
 
   {
     path: '/costs/dental-implants',

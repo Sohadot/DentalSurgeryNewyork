@@ -1,0 +1,87 @@
+.procedures-intro {
+  padding-block: var(--space-9) var(--space-7);
+  background: var(--marble-wash);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.procedures-section {
+  padding-block: var(--space-9);
+}
+
+.procedures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: var(--space-6);
+}
+
+.procedure-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  transition:
+    box-shadow var(--transition-medium),
+    border-color var(--transition-medium);
+}
+
+.procedure-card:hover {
+  box-shadow: var(--shadow-soft);
+  border-color: var(--color-accent-line);
+}
+
+.procedure-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 var(--space-3);
+}
+
+.procedure-card-title a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.procedure-card-title a:hover {
+  color: var(--color-accent);
+}
+
+.procedure-card-description {
+  font-size: 0.94rem;
+  color: var(--color-text-soft);
+  line-height: 1.65;
+  margin: 0 0 var(--space-5);
+}
+
+.procedure-card-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.procedure-card-link {
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.procedure-card-link:hover {
+  color: var(--color-accent);
+}
+
+.procedure-card-link--cost {
+  color: var(--color-text-soft);
+  font-weight: 500;
+}
+
+.procedure-card-link--cost:hover {
+  color: var(--color-text);
+}
+
+@media (max-width: 700px) {
+  .procedures-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -101,6 +101,17 @@ export const ROUTE_INDEX: RouteEntry[] = [
   },
 
   {
+    path: '/procedures',
+    title: 'Oral Surgery Procedures | New York Patient Reference',
+    description:
+      'Independent patient-first guides to the oral surgery procedures most frequently encountered by New York patients, including procedure structure, cost factors, and questions to ask.',
+    section: 'procedure',
+    routeFile: 'app/procedures/page.tsx',
+    priority: 0.92,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
     path: '/procedures/dental-implants',
     title:
       'Dental Implants in New York | Procedure Guide, Cost Factors, What to Ask',
@@ -123,6 +134,58 @@ export const ROUTE_INDEX: RouteEntry[] = [
     contentFile: 'content/procedures/wisdom-tooth-removal.mdx',
     routeFile: 'app/procedures/wisdom-tooth-removal/page.tsx',
     priority: 0.88,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/procedures/tooth-extraction',
+    title:
+      'Tooth Extraction in New York | Simple vs Surgical, Cost Factors, and What to Ask',
+    description:
+      'Understand tooth extraction in New York, including the difference between simple and surgical removal, cost factors, what often follows extraction, and questions to ask before treatment.',
+    section: 'procedure',
+    contentFile: 'content/procedures/tooth-extraction.mdx',
+    routeFile: 'app/procedures/tooth-extraction/page.tsx',
+    priority: 0.87,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/procedures/bone-grafting',
+    title:
+      'Bone Grafting for Oral Surgery in New York | Socket Preservation, Ridge Augmentation, Sinus Lift',
+    description:
+      'Understand bone grafting procedures in New York, including socket preservation, ridge augmentation, and sinus lift, with cost factors and questions to ask before treatment.',
+    section: 'procedure',
+    contentFile: 'content/procedures/bone-grafting.mdx',
+    routeFile: 'app/procedures/bone-grafting/page.tsx',
+    priority: 0.85,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/procedures/oral-surgery-sedation',
+    title:
+      'Oral Surgery Sedation in New York | Types, Credentials, Cost, and Recovery',
+    description:
+      'Understand sedation options for oral surgery in New York, including types of sedation, provider credentials, cost structure, and what recovery looks like.',
+    section: 'procedure',
+    contentFile: 'content/procedures/oral-surgery-sedation.mdx',
+    routeFile: 'app/procedures/oral-surgery-sedation/page.tsx',
+    priority: 0.84,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/procedures/emergency-oral-surgery',
+    title:
+      'Emergency Oral Surgery in New York | When to Seek Urgent Care and What to Expect',
+    description:
+      'Understand emergency oral surgery situations in New York, including when to go to an ER vs an oral surgeon, infection warning signs, and urgent care considerations.',
+    section: 'procedure',
+    contentFile: 'content/procedures/emergency-oral-surgery.mdx',
+    routeFile: 'app/procedures/emergency-oral-surgery/page.tsx',
+    priority: 0.86,
     changeFrequency: 'weekly',
     indexable: true,
   },
@@ -149,6 +212,58 @@ export const ROUTE_INDEX: RouteEntry[] = [
     contentFile: 'content/costs/wisdom-tooth-removal.mdx',
     routeFile: 'app/costs/wisdom-tooth-removal/page.tsx',
     priority: 0.86,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/costs/tooth-extraction',
+    title:
+      'Tooth Extraction Cost in New York | Simple vs. Surgical, Sedation, Socket Preservation',
+    description:
+      'Understand how simple vs. surgical extraction, sedation, imaging, and socket preservation affect tooth extraction cost in New York.',
+    section: 'cost',
+    contentFile: 'content/costs/tooth-extraction.mdx',
+    routeFile: 'app/costs/tooth-extraction/page.tsx',
+    priority: 0.84,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/costs/bone-grafting',
+    title:
+      'Bone Grafting Cost in New York | Socket Preservation, Ridge Augmentation, Sinus Lift',
+    description:
+      'Understand how graft type, material, membrane use, and sedation affect bone grafting cost in New York, from socket preservation through sinus lift procedures.',
+    section: 'cost',
+    contentFile: 'content/costs/bone-grafting.mdx',
+    routeFile: 'app/costs/bone-grafting/page.tsx',
+    priority: 0.83,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/costs/oral-surgery-sedation',
+    title:
+      'Oral Surgery Sedation Cost in New York | What Sedation Adds to Procedure Fees',
+    description:
+      'Understand how sedation type, procedure duration, and provider credentials affect sedation cost in New York oral surgery, and what to clarify before agreeing to treatment.',
+    section: 'cost',
+    contentFile: 'content/costs/oral-surgery-sedation.mdx',
+    routeFile: 'app/costs/oral-surgery-sedation/page.tsx',
+    priority: 0.82,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/costs/emergency-oral-surgery',
+    title:
+      'Emergency Oral Surgery Cost in New York | Urgent Fees, Imaging, and What to Ask',
+    description:
+      'Understand the cost structure of emergency oral surgery in New York, including urgent appointment fees, imaging, sedation, and what to clarify when contacting a provider.',
+    section: 'cost',
+    contentFile: 'content/costs/emergency-oral-surgery.mdx',
+    routeFile: 'app/costs/emergency-oral-surgery/page.tsx',
+    priority: 0.81,
     changeFrequency: 'weekly',
     indexable: true,
   },

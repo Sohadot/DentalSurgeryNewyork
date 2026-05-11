@@ -1,5 +1,31 @@
 # Decision Log
 
+## 2026-05-11 — Revenue Activation Readiness (Sprint 4)
+
+**Decision:** Prepare and commit the commercial outreach and partner-acquisition materials needed to begin the Founding Partner Pilot.
+
+**Rationale:** The site now has 30 registered routes across all six procedure areas, six cost guides, five borough pages, three decision guides, and a live `/partners` page. The editorial infrastructure is complete enough to begin limited commercial outreach without the site appearing thin or unfinished to prospective partners.
+
+**Artifacts created:**
+
+- `PARTNER_BRIEF.md` — One-page shareable overview of the partner program for prospective practices. Covers what's included, what's explicitly excluded, pilot pricing, disclosure language, and qualification requirements. Written for a practice owner or manager, not for internal use.
+- `FOUNDING_PARTNER_PILOT.md` — Internal operating note defining pilot structure, seat limit (5 practices), pricing ($500/month or $1,200 prepaid for 90 days), included placement surfaces, intake process, governance rules, and pilot review criteria.
+- `OUTREACH_DRAFTS.md` — Four email templates: (1) initial outreach, (2) reply to interested practice, (3) full terms reply, (4) no-pressure follow-up. All templates are consistent with `COMMERCIALIZATION_POSTURE.md` — no patient volume promises, no referral language, no clinical ranking.
+- `PARTNER_TARGET_CRITERIA.md` — Internal document defining baseline qualification requirements, preferred characteristics, disqualifying factors, and three priority tiers for first outreach. Includes a per-practice qualification checklist.
+
+**Pilot terms:**
+- 90-day initial period
+- Fixed-fee: $500/month or $1,200 prepaid
+- Maximum 5 practices in pilot cohort
+- Placement surfaces: partner directory, relevant procedure pages, relevant cost guide pages, borough page where applicable
+- Monthly simple visibility report
+- No patient referrals, no clinical endorsement, no editorial control, no ranking by payment
+- Full disclosure label on every placement: "Partner practice — sponsored placement. Inclusion does not constitute a clinical recommendation."
+
+**Governance alignment:** All documents align with `COMMERCIALIZATION_POSTURE.md`. No new commercial mechanisms are introduced — the pilot uses the fixed-fee placement model already defined in the posture document. No changes to editorial content, site structure, or partner program public page were made as part of this sprint.
+
+---
+
 ## 2026-05-10 — Procedure Hub and Cost Decision Layer (Sprint 3)
 
 **Decision:** Build the `/procedures` hub page and add four cost guide pages (tooth extraction, bone grafting, oral surgery sedation, emergency oral surgery).

@@ -21,7 +21,7 @@ const TIERS = [
       'Visible in your relevant borough section',
       'Outbound link to your practice website',
       'Contact information displayed',
-      'Clear “Partner Practice” disclosure label',
+      'Clear "Partner Practice" disclosure label',
     ],
     note: 'Suitable for founding partners. No traffic guarantees. No clinical claims.',
     featured: false,
@@ -150,6 +150,55 @@ export default function PartnersPage() {
               <p className="tier-note">{tier.note}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="container partners-section">
+        <div className="partners-copy-block">
+          <h2 className="partners-section-title">Educational guide underwriting</h2>
+          <p className="partners-body-text">
+            Qualified practices may support selected reference guides, cost-index
+            pages, or checklist resources through fixed-fee, disclosed
+            underwriting. Underwriting places the practice’s name on a specific
+            resource as a financial supporter — not as an editorial contributor.
+          </p>
+          <p className="partners-body-text">
+            Underwriting is available to Reference Partner and Category Sponsor
+            tier practices. Available surfaces include procedure guides, cost
+            guides, the cost index, and consultation checklists.
+          </p>
+          <ul className="tier-includes">
+            <li>
+              <strong>No editorial control</strong> — the underwriter does not
+              review, approve, or modify content on the underwritten page
+            </li>
+            <li>
+              <strong>No clinical endorsement</strong> — underwriting is not a
+              clinical recommendation or ranking of any kind
+            </li>
+            <li>
+              <strong>No ranking advantage</strong> — underwriting does not
+              affect practice ordering or positioning relative to other practices
+            </li>
+            <li>
+              <strong>No pay-per-lead</strong> — underwriting is a fixed fee
+              unrelated to patient volume or inquiries
+            </li>
+            <li>
+              <strong>No revenue share</strong> — fees are flat; no percentage
+              of clinical revenue is exchanged
+            </li>
+            <li>
+              <strong>No patient data transfer</strong> — the site does not
+              collect or share patient contact information
+            </li>
+          </ul>
+          <p className="partners-disclosure">
+            All underwritten pages carry a visible disclosure: “This page is
+            underwritten by [Practice Name]. Editorial content is independently
+            produced and is not subject to the underwriter’s review or
+            approval.”
+          </p>
         </div>
       </section>
 

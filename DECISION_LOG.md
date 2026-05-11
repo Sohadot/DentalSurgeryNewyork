@@ -1,5 +1,28 @@
 # Decision Log
 
+## 2026-05-11 — Institutional Trust and Underwriting Layer (Sprint 5)
+
+**Decision:** Add an institutional trust and passive revenue layer to strengthen the site's reference-grade authority and create fixed-fee underwriting surfaces without weakening editorial independence.
+
+**Rationale:** With 34 registered routes across all editorial sections, the site has sufficient content depth to support dedicated reference infrastructure and to offer underwriting surfaces to qualified partners. The four new pages serve a dual purpose: they strengthen patient decision support and create distinct, editorially independent placement surfaces under the fixed-fee underwriting model.
+
+**Artifacts created:**
+
+- `/standards` (`content/core/standards.mdx`) — Defines the patient decision standards used across the site: when to seek specialist consultation, how to evaluate cost estimates, sedation questions before treatment, emergency vs. non-emergency guidance, and the site's no-ranking and no-endorsement policy.
+- `/cost-index` (`content/guides/cost-index.mdx`) — Consolidated cost-factor reference layer aggregating directional ranges from all six procedure cost guides. Includes strong disclaimer language, links to all individual cost and procedure guides, and a summary of cross-procedure cost factors.
+- `/checklists` (`content/guides/checklists.mdx`) — Seven practical patient-first checklists: tooth extraction, wisdom tooth removal, dental implant planning, bone grafting, sedation safety, emergency call preparation, and cost estimate clarification.
+- `/editorial-updates` (`content/core/editorial-updates.mdx`) — Transparent log of content additions, procedure and cost guide expansions, and governance decisions. Documents that the asset is actively governed without making exaggerated clinical review claims.
+
+**Routes registered:** Four new routes added to `lib/content-index.ts`. Total: 34 routes. Sitemap auto-includes all indexable routes via `buildSitemapEntries()`.
+
+**`/partners` update:** Added an "Educational Guide Underwriting" section explicitly defining what underwriting includes and the six things it does not: no editorial control, no clinical endorsement, no ranking advantage, no pay-per-lead, no revenue share, no patient data transfer.
+
+**`COMMERCIALIZATION_POSTURE.md` update:** Expanded model 4 from a short paragraph to a full governance definition. Added specific language on what underwriting cannot influence: editorial conclusions, cost ranges, safety guidance, provider selection standards, and content outside the specific underwritten resource. Updated Editorial Independence section to enumerate these categories explicitly.
+
+**Governance alignment:** All new pages comply with `COMMERCIALIZATION_POSTURE.md`. No lead forms, no fake practices, no clinical endorsements, no affiliate links, no patient data collection, no medical review claims unsupported by an actual reviewer.
+
+---
+
 ## 2026-05-11 — Revenue Activation Readiness (Sprint 4)
 
 **Decision:** Prepare and commit the commercial outreach and partner-acquisition materials needed to begin the Founding Partner Pilot.

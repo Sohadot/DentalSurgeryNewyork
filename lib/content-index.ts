@@ -87,6 +87,30 @@ export const ROUTE_INDEX: RouteEntry[] = [
     changeFrequency: 'monthly',
     indexable: true,
   },
+  {
+    path: '/standards',
+    title: 'Oral Surgery Decision Standards | New York Patient Reference',
+    description:
+      'Patient decision standards used across dentalsurgerynewyork.com — when to seek specialist consultation, how to evaluate cost estimates, and sedation questions.',
+    section: 'core',
+    contentFile: 'content/core/standards.mdx',
+    routeFile: 'app/standards/page.tsx',
+    priority: 0.82,
+    changeFrequency: 'monthly',
+    indexable: true,
+  },
+  {
+    path: '/editorial-updates',
+    title: 'Editorial Updates & Review Log | Dental Surgery New York',
+    description:
+      'A transparent log of content additions, procedure expansions, cost guide launches, and governance decisions made on dentalsurgerynewyork.com.',
+    section: 'core',
+    contentFile: 'content/core/editorial-updates.mdx',
+    routeFile: 'app/editorial-updates/page.tsx',
+    priority: 0.65,
+    changeFrequency: 'monthly',
+    indexable: true,
+  },
 
   {
     path: '/partners',
@@ -266,6 +290,30 @@ export const ROUTE_INDEX: RouteEntry[] = [
     indexable: true,
   },
 
+  {
+    path: '/cost-index',
+    title: 'New York Oral Surgery Cost Index | Directional Ranges',
+    description:
+      'Directional cost ranges for oral surgery procedures in New York — tooth extraction, implants, bone grafting, sedation, and emergency care. Not a quote.',
+    section: 'guide',
+    contentFile: 'content/guides/cost-index.mdx',
+    routeFile: 'app/cost-index/page.tsx',
+    priority: 0.87,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/checklists',
+    title: 'Oral Surgery Consultation Checklists | New York Patients',
+    description:
+      'Practical patient-first checklists for oral surgery consultations in New York — implants, extraction, bone grafting, sedation, and cost estimate review.',
+    section: 'guide',
+    contentFile: 'content/guides/checklists.mdx',
+    routeFile: 'app/checklists/page.tsx',
+    priority: 0.84,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
   {
     path: '/guides/choose-an-oral-surgeon',
     title:

@@ -30,9 +30,23 @@ A single practice may sponsor a borough section (Manhattan, Brooklyn, Queens, Br
 
 A single practice may sponsor a procedure section, gaining designated visible placement within those procedure pages. Sponsorship does not alter editorial content.
 
-### 4. Underwritten Educational Guides
+### 4. Educational Guide Underwriting
 
-A practice may underwrite a specific educational guide. The guide remains editorially independent. The practice's name appears as "Underwritten by" with no influence over content, framing, or conclusions.
+A qualified partner practice may underwrite a specific educational guide, cost-index page, or patient checklist resource published on the site. Underwriting is a fixed-fee commercial model with full editorial independence preserved.
+
+The underwriting practice's name appears on the page as "Underwritten by [Practice Name]." A visible disclosure accompanies every underwritten page:
+
+> "This page is underwritten by [Practice Name]. Editorial content is independently produced and is not subject to the underwriter's review or approval."
+
+**What underwriting cannot influence:**
+- Editorial conclusions on any page
+- Directional cost ranges, cost structures, or pricing context
+- Safety guidance, warnings, or risk disclosures
+- Provider selection standards or criteria
+- Comparisons between procedure options or approaches
+- Any content on pages outside the specific underwritten resource
+
+Underwriting is available to Reference Partner and Category Sponsor tier practices. Available surfaces include procedure guides, cost guides, the cost index, and consultation checklists.
 
 ### 5. Monthly Demand Intelligence Reports
 
@@ -65,6 +79,9 @@ Commercial relationships do not influence:
 - Methodology or accuracy policy
 - Question-and-answer content
 - Warnings, caveats, or risk disclosures
+- Cost ranges, directional pricing, or cost factor descriptions
+- Safety guidance or emergency triage guidance
+- Provider selection standards or criteria
 
 Sponsored or partner-placed content is always separated from editorial content and clearly labeled.
 
@@ -74,7 +91,7 @@ Sponsored or partner-placed content is always separated from editorial content a
 
 - Partner placement does not constitute a clinical recommendation or endorsement.
 - The site does not verify clinical outcomes, patient satisfaction, or practice quality beyond confirming New York State licensure status.
-- Partner status does not mean "best," "recommended," or "preferred" in any clinical sense.
+- Partner status does not mean “best,” “recommended,” or “preferred” in any clinical sense.
 - A partner practice is responsible for its own clinical care, pricing, scheduling, and patient communication.
 - Partner placement is available to licensed oral surgeons and dental implant providers in New York only.
 
@@ -88,13 +105,13 @@ Every sponsored placement must include a visible disclosure — legible, present
 
 For underwritten guides:
 
-> "This section is underwritten by [Practice Name]. Editorial content is independently produced."
+> "This page is underwritten by [Practice Name]. Editorial content is independently produced and is not subject to the underwriter's review or approval."
 
 ---
 
 ## No Medical Recommendation Policy
 
-dentalsurgerynewyork.com does not recommend specific practitioners, diagnose conditions, suggest treatment, or advise patients on clinical decisions. This applies equally to paid and unpaid content. A partner practice may not be described as "recommended" in the clinical sense.
+dentalsurgerynewyork.com does not recommend specific practitioners, diagnose conditions, suggest treatment, or advise patients on clinical decisions. This applies equally to paid and unpaid content. A partner practice may not be described as “recommended” in the clinical sense.
 
 ---
 
@@ -126,3 +143,4 @@ This posture protects the asset's acquisition value. Any future buyer inherits:
 | Version | Date | Change |
 |---------|------|--------|
 | 1.0 | 2026-05-10 | Initial document |
+| 1.1 | 2026-05-11 | Expanded model 4 to include cost-index and checklist surfaces; added underwriting influence prohibitions; updated Editorial Independence section to enumerate cost ranges, safety guidance, and provider selection standards |

@@ -1,5 +1,40 @@
 # Decision Log
 
+## 2026-05-11 — Borough Decision Layer (Sprint 7)
+
+**Decision:** Replace shallow borough location pages with comprehensive 11-section patient decision guides for all five NYC boroughs (Manhattan, Brooklyn, Queens, the Bronx, Staten Island). Strengthen the `/locations` hub page.
+
+**Rationale:** The original borough pages (~40 lines each) provided minimal local context. The Inevitable Reference Strategy requires borough-specific infrastructure that meaningfully differentiates each borough's access logistics, procedure complexity framing, cost context, emergency boundaries, and consultation checklists. Shallow content does not serve that objective.
+
+**Governance alignment:** All five borough pages comply with `COMMERCIALIZATION_POSTURE.md`:
+- No named practices
+- No rankings
+- No "best oral surgeon" language
+- No unsupported pricing claims
+- Partner visibility bridge sentence appears once per page, at the end, after all editorial content
+- Emergency sections do not encourage price-shopping
+
+**Content structure per borough page:**
+1. Borough decision context
+2. Access and follow-up considerations
+3. Procedure complexity context (all 6 procedure types addressed)
+4. Cost context with cautious language
+5. When to search beyond the borough
+6. Emergency boundaries
+7. Borough consultation checklist
+8. Related procedure links
+9. Related cost links
+10. Editorial note
+11. Light partner visibility bridge
+
+**Internal linking note:** Borough pages link only to routes that exist in this version of `lib/content-index.ts`. Routes for tooth extraction, bone grafting, oral surgery sedation, and emergency oral surgery procedures/costs are referenced in prose but not linked, as those routes are not yet present in the local route registry.
+
+**Borough Decision Layer added to strengthen New York-specific reference depth and support the Inevitable Reference strategy.**
+
+No new routes added. All 27 routes validate and build cleanly.
+
+---
+
 ## 2026-05-11 — Institutional Trust and Underwriting Layer (Sprint 5)
 
 **Decision:** Add an institutional trust and passive revenue layer to strengthen the site's reference-grade authority and create fixed-fee underwriting surfaces without weakening editorial independence.

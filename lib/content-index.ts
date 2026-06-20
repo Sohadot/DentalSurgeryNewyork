@@ -651,6 +651,42 @@ export const ROUTE_INDEX: RouteEntry[] = [
     changeFrequency: 'weekly',
     indexable: true,
   },
+  {
+    path: '/questions/what-is-the-difference-between-a-periodontist-and-an-oral-surgeon',
+    title: 'Periodontist vs. Oral Surgeon in New York | What Patients Should Know',
+    description:
+      'Understand the difference between a periodontist and an oral surgeon in New York, when each specialist is relevant, and how to ask the right credential questions.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-the-difference-between-a-periodontist-and-an-oral-surgeon.mdx',
+    routeFile: 'app/questions/what-is-the-difference-between-a-periodontist-and-an-oral-surgeon/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-osseointegration-and-why-does-it-matter',
+    title: 'What Is Osseointegration? | Dental Implant Basics for New York Patients',
+    description:
+      'Understand what osseointegration means for dental implants in New York, how the process works, what affects it, and what questions to ask before treatment.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-osseointegration-and-why-does-it-matter.mdx',
+    routeFile: 'app/questions/what-is-osseointegration-and-why-does-it-matter/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/can-i-get-dental-implants-if-i-have-gum-disease',
+    title: 'Can I Get Dental Implants If I Have Gum Disease? | New York Guide',
+    description:
+      'Understand how active gum disease affects dental implant candidacy in New York, what needs to be resolved first, and what questions to ask your provider.',
+    section: 'question',
+    contentFile: 'content/questions/can-i-get-dental-implants-if-i-have-gum-disease.mdx',
+    routeFile: 'app/questions/can-i-get-dental-implants-if-i-have-gum-disease/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
 ]
 
 export function getRouteByPath(routePath: string): RouteEntry {

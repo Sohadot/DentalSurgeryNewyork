@@ -943,7 +943,7 @@ export const ROUTE_INDEX: RouteEntry[] = [
     path: '/questions/does-medicaid-cover-oral-surgery-in-new-york',
     title: 'Does Medicaid Cover Oral Surgery in New York? | Benefits Guide',
     description:
-      'Understand how New York State Medicaid covers oral surgery, including tooth extractions and emergency dental services, and what is generally excluded from adult dental benefits.',
+      'Learn how New York Medicaid may cover oral surgery, including extractions, emergency dental care, plan rules, and common adult benefit exclusions.',
     section: 'question',
     contentFile: 'content/questions/does-medicaid-cover-oral-surgery-in-new-york.mdx',
     routeFile: 'app/questions/does-medicaid-cover-oral-surgery-in-new-york/page.tsx',

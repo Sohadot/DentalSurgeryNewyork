@@ -903,6 +903,66 @@ export const ROUTE_INDEX: RouteEntry[] = [
     changeFrequency: 'weekly',
     indexable: true,
   },
+  {
+    path: '/questions/why-are-dental-implants-so-expensive',
+    title: 'Why Are Dental Implants So Expensive? | New York Cost Guide',
+    description:
+      'Understand why dental implants cost what they do in New York, what drives price variation, and why advertised pricing rarely reflects the full treatment cost.',
+    section: 'question',
+    contentFile: 'content/questions/why-are-dental-implants-so-expensive.mdx',
+    routeFile: 'app/questions/why-are-dental-implants-so-expensive/page.tsx',
+    priority: 0.8,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-the-difference-between-a-dental-implant-and-a-bridge',
+    title: 'Dental Implant vs. Bridge | New York Patient Decision Guide',
+    description:
+      'Understand the differences between a dental implant and a bridge in New York, including bone preservation, adjacent tooth impact, cost, and longevity.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-the-difference-between-a-dental-implant-and-a-bridge.mdx',
+    routeFile: 'app/questions/what-is-the-difference-between-a-dental-implant-and-a-bridge/page.tsx',
+    priority: 0.79,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-pericoronitis',
+    title: 'What Is Pericoronitis? | Wisdom Tooth Infection Explained',
+    description:
+      'Understand what pericoronitis is, why it occurs around partially erupted wisdom teeth, what the symptoms are, and when it indicates removal in New York.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-pericoronitis.mdx',
+    routeFile: 'app/questions/what-is-pericoronitis/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/does-medicaid-cover-oral-surgery-in-new-york',
+    title: 'Does Medicaid Cover Oral Surgery in New York? | Benefits Guide',
+    description:
+      'Understand how New York State Medicaid covers oral surgery, including tooth extractions and emergency dental services, and what is generally excluded from adult dental benefits.',
+    section: 'question',
+    contentFile: 'content/questions/does-medicaid-cover-oral-surgery-in-new-york.mdx',
+    routeFile: 'app/questions/does-medicaid-cover-oral-surgery-in-new-york/page.tsx',
+    priority: 0.78,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-an-oral-and-maxillofacial-surgeon',
+    title: 'What Is an Oral and Maxillofacial Surgeon? | New York Guide',
+    description:
+      'Understand what oral and maxillofacial surgeons do, how their training differs from general dentistry, and when their involvement is relevant in New York.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-an-oral-and-maxillofacial-surgeon.mdx',
+    routeFile: 'app/questions/what-is-an-oral-and-maxillofacial-surgeon/page.tsx',
+    priority: 0.78,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
 ]
 
 export function getRouteByPath(routePath: string): RouteEntry {

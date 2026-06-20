@@ -6,19 +6,39 @@ This is not a medical literature review log. No clinical reviewer is listed on t
 
 ---
 
-## 2026-06-20 — Structured Data Layer and Question Library Expansion
+## 2026-06-20 — Framework Intelligence Layer Completion and Question Library Depth
+
+**Added (category framework pages — 3 new):**
+
+- `/category-language` — The definitional vocabulary layer governing how key oral surgery terms are used across this reference: clinical terms, cost and billing terms, provider credential distinctions, insurance terminology, and New York-specific context. Defines terms such as OMFS, implant, osseointegration, estimate, treatment episode, predetermination, and directional range with the precision necessary for patient comparison and decision-making.
+- `/protocol` — A structured 7-phase patient navigation framework covering the full oral surgery journey from initial assessment through multi-phase treatment sequences, with decision checkpoints and minimum documentation standards at each phase: recognition and initial assessment, specialist consultation, pre-authorization, pre-operative preparation, day of procedure, recovery and follow-up, and subsequent treatment.
+- `/decision-compass` — A structured self-triage reference with 5 decision paths: implant candidacy assessment, bone graft need evaluation, sedation level selection, emergency recognition and triage, and second opinion evaluation. Each path ends at a specific action point — a question or documentation request to bring to a provider consultation.
+
+**Added (question pages — 6 new):** `/questions/what-is-the-difference-between-a-periodontist-and-an-oral-surgeon`, `/questions/what-is-osseointegration-and-why-does-it-matter`, `/questions/can-i-get-dental-implants-if-i-have-gum-disease`, `/questions/what-causes-dry-socket-and-how-is-it-treated`, `/questions/when-should-i-see-an-oral-surgeon-instead-of-a-dentist`, `/questions/what-happens-after-dental-implant-placement`.
+
+**Route index:** ROUTE_INDEX contains 56 entries. Question library expanded from 13 to 19 pages. Framework pages for Layers 2, 5, and 6 now have dedicated content alongside the Layer 3 Ontology added in the prior sprint.
+
+**Agent-readable index:** `public/llms.txt` updated to reflect all 56 indexed routes including the expanded Category Framework section.
+
+**Purpose:** Close the three most immediately executable framework gaps — Category Language (definitional authority), Protocol (patient journey governance), and Decision Compass (structured self-triage tool). Extend the question library depth with clinically specific topics: specialist scope comparison, osseointegration mechanics, gum disease as an implant candidacy barrier, dry socket risk and management, provider selection scope, and the post-implant treatment timeline. These additions collectively deepen the site’s position as the primary independent reference for oral surgery decision-making in New York.
+
+---
+
+## 2026-06-20 — Structured Data Layer, Ontology, and Question Library Expansion
 
 **Added (question pages — 6 new):** `/questions/what-happens-if-you-dont-replace-a-missing-tooth`, `/questions/what-is-socket-preservation-and-why-does-it-matter`, `/questions/can-dental-implants-fail`, `/questions/does-insurance-cover-oral-surgery-in-new-york`, `/questions/what-to-expect-on-the-day-of-oral-surgery`, `/questions/how-do-i-know-if-i-need-a-sinus-lift`.
 
 **Added (decision guide):** `/guides/understanding-your-oral-surgery-estimate` — a structured guide to reading itemized oral surgery estimates, identifying common omissions in low-cost quotes, and comparing estimates across providers on equivalent terms.
 
-**Added (structured data):** Schema.org JSON-LD coverage extended across all 46 indexed routes. Procedure pages emit `MedicalWebPage` and `BreadcrumbList`. All thirteen patient question pages emit `FAQPage` and `BreadcrumbList`. Cost guides, patient decision guides, borough location pages, the procedure hub, and core governance pages now emit `MedicalWebPage` and `BreadcrumbList`.
+**Added (category framework):** `/ontology` — a 5-tier conceptual map of oral surgery: foundational concepts (alveolar bone, osseointegration, occlusion, anesthesia continuum), procedure concepts with upstream/downstream relationships, cost concepts (treatment episode, directional range, billing structure), provider and credential concepts (OMFS, board certification, hospital privileges), and insurance and coverage concepts (dental vs. medical benefit, predetermination, prior authorization).
 
-**Updated (agent-readable index):** `public/llms.txt` updated to reflect all 46 indexed routes across procedures, costs, guides, questions, and borough sections.
+**Added (structured data):** Schema.org JSON-LD coverage extended across all indexed routes. Procedure pages emit `MedicalWebPage` and `BreadcrumbList`. Patient question pages emit `FAQPage` and `BreadcrumbList`. Cost guides, patient decision guides, borough location pages, the procedure hub, and core governance pages emit `MedicalWebPage` and `BreadcrumbList`.
 
-**Route index:** ROUTE_INDEX contains 46 entries covering home, core, commercial, procedure, cost, guide, location, and question sections.
+**Updated (agent-readable index):** `public/llms.txt` updated with Category Framework section and all indexed routes.
 
-**Purpose:** Extend structured data coverage to all content pages to strengthen eligibility for Google rich results, particularly FAQ rich results for patient questions. Expand the question library with six new patient-facing topics relevant to oral surgery decisions in New York. Add a strategic guide addressing the estimate-comparison gap, which is a high-intent decision moment for patients.
+**Route index:** ROUTE_INDEX contains 47 entries at end of this sprint.
+
+**Purpose:** Extend structured data coverage to all content pages to strengthen eligibility for Google rich results, particularly FAQ rich results for patient questions. Add the Category Ontology — the most strategically differentiated page on the site, unique in the oral surgery category. Expand the question library with six new patient-facing topics relevant to oral surgery decisions in New York.
 
 ---
 
@@ -26,7 +46,7 @@ This is not a medical literature review log. No clinical reviewer is listed on t
 
 **Added:** `/standards` (New York Oral Surgery Decision Standards), `/cost-index` (New York Oral Surgery Cost Index), `/checklists` (Oral Surgery Consultation Checklists), `/editorial-updates` (this page).
 
-**Purpose:** Strengthen the site's reference-grade authority with a patient decision standards document, a consolidated cost-factor reference layer, and practical consultation checklists. These pages deepen the editorial inventory and provide distinct underwriting surfaces governed by the site's fixed-fee, fully disclosed commercial framework.
+**Purpose:** Strengthen the site’s reference-grade authority with a patient decision standards document, a consolidated cost-factor reference layer, and practical consultation checklists. These pages deepen the editorial inventory and provide distinct underwriting surfaces governed by the site’s fixed-fee, fully disclosed commercial framework.
 
 **Commercial update:** The `/partners` page updated to describe Educational Guide Underwriting. `COMMERCIALIZATION_POSTURE.md` updated to explicitly include cost-index and checklist pages as underwriteable surfaces and to define the limits of underwriting influence.
 
@@ -68,7 +88,7 @@ This is not a medical literature review log. No clinical reviewer is listed on t
 
 **Added:** Home page, `/procedures/dental-implants`, `/procedures/wisdom-tooth-removal`, `/costs/dental-implants`, `/costs/wisdom-tooth-removal`, `/guides/choose-an-oral-surgeon`, `/guides/questions-to-ask-before-surgery`, `/guides/anesthesia-credentials-explained`, five borough location pages, two patient question pages, and core policy pages (`/methodology`, `/independence-policy`, `/accuracy-policy`, `/disclaimer`).
 
-**Purpose:** Initial build establishing the editorial foundation — procedure guides, cost guides, decision guides, borough location guidance, and governance policy pages that define the site's independence and accuracy standards.
+**Purpose:** Initial build establishing the editorial foundation — procedure guides, cost guides, decision guides, borough location guidance, and governance policy pages that define the site’s independence and accuracy standards.
 
 ---
 

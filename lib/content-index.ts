@@ -843,6 +843,66 @@ export const ROUTE_INDEX: RouteEntry[] = [
     changeFrequency: 'weekly',
     indexable: true,
   },
+  {
+    path: '/questions/what-is-peri-implantitis',
+    title: 'What Is Peri-Implantitis? | Dental Implant Complication Explained',
+    description:
+      'Understand what peri-implantitis is, how it differs from early implant failure, what causes it, and what to ask about long-term implant maintenance in New York.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-peri-implantitis.mdx',
+    routeFile: 'app/questions/what-is-peri-implantitis/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-a-cbct-scan',
+    title: 'What Is a CBCT Scan? | Oral Surgery Imaging Explained for Patients',
+    description:
+      'Understand what a CBCT scan is, when it is used in oral surgery and implant planning in New York, and how it differs from standard dental X-rays.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-a-cbct-scan.mdx',
+    routeFile: 'app/questions/what-is-a-cbct-scan/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-iv-sedation-and-how-does-it-work',
+    title: 'What Is IV Sedation and How Does It Work? | Oral Surgery Guide',
+    description:
+      'Understand what IV sedation involves in oral surgery, how it differs from other sedation types, who administers it, and what to ask before agreeing to it in New York.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-iv-sedation-and-how-does-it-work.mdx',
+    routeFile: 'app/questions/what-is-iv-sedation-and-how-does-it-work/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/how-does-bone-grafting-work',
+    title: 'How Does Bone Grafting Work? | Oral Surgery Procedure Explained',
+    description:
+      'Understand how bone grafting works in oral surgery, the types of graft material and procedures, healing timelines, and how it fits into the implant sequence in New York.',
+    section: 'question',
+    contentFile: 'content/questions/how-does-bone-grafting-work.mdx',
+    routeFile: 'app/questions/how-does-bone-grafting-work/page.tsx',
+    priority: 0.78,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-should-i-eat-after-oral-surgery',
+    title: 'What Should I Eat After Oral Surgery? | New York Recovery Guide',
+    description:
+      'Understand diet guidelines after oral surgery in New York, including what to eat and avoid in the first days after extraction or implant procedures.',
+    section: 'question',
+    contentFile: 'content/questions/what-should-i-eat-after-oral-surgery.mdx',
+    routeFile: 'app/questions/what-should-i-eat-after-oral-surgery/page.tsx',
+    priority: 0.76,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
 ]
 
 export function getRouteByPath(routePath: string): RouteEntry {

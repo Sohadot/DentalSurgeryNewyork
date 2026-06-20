@@ -92,6 +92,11 @@ Focused answers to common patient questions about oral surgery in New York.
 - /questions/what-is-peri-implant-mucositis — Reversible gum inflammation around implants: early warning before bone loss, distinction from peri-implantitis, treatment
 - /questions/what-does-board-certified-mean-for-oral-surgeons — ABOMS voluntary credential beyond state licensure: requirements, maintenance, and how to verify
 - /questions/how-does-diabetes-affect-oral-surgery — Risk modifier for healing, infection, and osseointegration: what to disclose and HbA1c reference points
+- /questions/how-long-does-a-dental-implant-last — Implant post can last decades (90–95% at 10yr); crown lasts 10–15 years. Longevity factors and maintenance explained.
+- /questions/can-you-smoke-after-tooth-extraction — Smoking increases dry socket risk 3–5x. Minimum wait times, mechanisms, and recovery guidance.
+- /questions/what-is-a-healing-abutment — Temporary component that shapes gum tissue between osseointegration and final crown placement.
+- /questions/what-is-immediate-implant-placement — Implant placed same day as extraction. Candidacy requirements, distinction from immediate loading.
+- /questions/how-do-blood-thinners-affect-oral-surgery — Anticoagulants and antiplatelet agents: disclosure requirements, surgeon management approach, and physician coordination.
 
 ### Borough Guides
 Location-specific decision context for New York City patients.

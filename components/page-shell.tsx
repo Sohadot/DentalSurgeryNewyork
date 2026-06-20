@@ -5,6 +5,7 @@ type PageShellProps = {
   title: string
   intro?: string
   children: ReactNode
+  schemas?: object[]
 }
 
 export default function PageShell({
@@ -12,9 +13,17 @@ export default function PageShell({
   title,
   intro,
   children,
+  schemas,
 }: PageShellProps) {
   return (
     <main className="page-main">
+      {schemas?.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
       <section className="container page-section">
         {eyebrow ? <div className="page-eyebrow">{eyebrow}</div> : null}
         <h1 className="page-title">{title}</h1>

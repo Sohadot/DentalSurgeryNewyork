@@ -1,0 +1,71 @@
+# DentalSurgeryNewYork.com
+# https://dentalsurgerynewyork.com
+# Independent oral surgery reference for New York City patients.
+
+## Purpose
+DentalSurgeryNewYork.com is an editorially independent patient guidance platform for oral surgery decisions in New York City. It does not represent any dental practice, does not accept clinical endorsements, and does not facilitate patient referrals. Its purpose is to improve decision clarity in a category where procedure framing, provider positioning, and pricing logic are frequently difficult for patients to interpret.
+
+## Editorial Independence
+The site is governed by a published independence policy and commercialization posture. Partner practice placements are fixed-fee, fully disclosed, and carry no editorial influence. No clinical claims are made. No patient data is collected.
+
+## Key Sections
+
+### Procedures
+Reference-grade guides for oral surgery procedures commonly encountered by New York patients.
+- /procedures — Procedure hub
+- /procedures/dental-implants — Dental implants: structure, cost drivers, questions to ask
+- /procedures/wisdom-tooth-removal — Wisdom tooth removal: simple vs surgical, sedation
+- /procedures/tooth-extraction — Tooth extraction: simple vs surgical
+- /procedures/bone-grafting — Bone grafting: socket preservation through sinus lift
+- /procedures/oral-surgery-sedation — Sedation types, credentials, and cost structure
+- /procedures/emergency-oral-surgery — Emergency situations: ER vs oral surgeon
+
+### Cost Guides
+Structural cost analysis for New York oral surgery procedures.
+- /costs/dental-implants — Implant cost: components, omissions, and what to request
+- /costs/wisdom-tooth-removal — Wisdom tooth cost variables
+- /costs/tooth-extraction — Extraction cost: simple vs surgical
+- /costs/bone-grafting — Grafting cost: type, material, and staging
+- /costs/oral-surgery-sedation — Sedation cost structure
+- /costs/emergency-oral-surgery — Emergency cost structure
+- /cost-index — Directional cost ranges for all covered procedures
+
+### Patient Decision Guides
+Structured decision guidance for New York patients.
+- /guides/choose-an-oral-surgeon — Credentials, transparency standards, what to ask
+- /guides/questions-to-ask-before-surgery — Pre-treatment question framework
+- /guides/anesthesia-credentials-explained — Sedation roles and provider credentials
+- /checklists — Consultation checklists by procedure type
+
+### Patient Questions
+Focused answers to common patient questions about oral surgery in New York.
+- /questions/what-is-included-in-implant-cost — Implant quote component breakdown
+- /questions/how-long-does-wisdom-tooth-recovery-take — Recovery timeline variables
+- /questions/is-bone-grafting-required-for-dental-implants — When grafting is and is not needed
+- /questions/how-do-i-compare-oral-surgery-quotes-in-new-york — Quote comparison framework
+- /questions/what-is-the-difference-between-an-oral-surgeon-and-a-dentist — Provider credential differences
+- /questions/what-sedation-options-are-available-for-oral-surgery — Sedation type overview
+- /questions/how-long-does-dental-implant-treatment-take — Implant treatment timeline
+
+### Borough Guides
+Location-specific decision context for New York City patients.
+- /locations — NYC borough guide hub
+- /locations/manhattan — Manhattan oral surgery context
+- /locations/brooklyn — Brooklyn oral surgery context
+- /locations/queens — Queens oral surgery context
+- /locations/bronx — Bronx oral surgery context
+- /locations/staten-island — Staten Island oral surgery context
+
+### Governance and Standards
+- /methodology — Research and editorial methodology
+- /independence-policy — Editorial independence policy
+- /accuracy-policy — Accuracy and revision policy
+- /standards — Patient decision standards used across the site
+- /editorial-updates — Transparent content update log
+- /disclaimer — Informational use disclaimer
+
+## Content Policy
+All content on this site is informational. It does not constitute clinical advice, diagnosis, or treatment recommendation. Patients should consult qualified providers for individual assessments.
+
+## Commercial Policy
+Partner practice placements are available on a fixed-fee, fully-disclosed basis. No pay-per-lead. No clinical endorsement. No editorial control sold. See /partners for current program details.

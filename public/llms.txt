@@ -82,6 +82,11 @@ Focused answers to common patient questions about oral surgery in New York.
 - /questions/what-is-iv-sedation-and-how-does-it-work — IV sedation mechanics, credentials, preparation, and what to ask before agreeing
 - /questions/how-does-bone-grafting-work — Graft types, materials, healing timelines, and how grafting fits into the implant sequence
 - /questions/what-should-i-eat-after-oral-surgery — Post-operative diet guidelines: soft foods, what to avoid, and recovery planning
+- /questions/why-are-dental-implants-so-expensive — Implant cost breakdown: components, provider and facility fees, and how to interpret pricing variation
+- /questions/what-is-the-difference-between-a-dental-implant-and-a-bridge — Implant vs. bridge: structure, longevity, bone preservation, and cost comparison
+- /questions/what-is-pericoronitis — Pericoronitis: gum infection around partially erupted wisdom teeth, symptoms, and treatment options
+- /questions/does-medicaid-cover-oral-surgery-in-new-york — Medicaid and oral surgery in New York: what is covered and what requires prior authorization
+- /questions/what-is-an-oral-and-maxillofacial-surgeon — OMFS credentials, training path, and scope of practice relative to general dentists and periodontists
 
 ### Borough Guides
 Location-specific decision context for New York City patients.

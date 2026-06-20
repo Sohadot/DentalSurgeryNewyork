@@ -123,6 +123,42 @@ export const ROUTE_INDEX: RouteEntry[] = [
     changeFrequency: 'monthly',
     indexable: true,
   },
+  {
+    path: '/protocol',
+    title: 'Oral Surgery Navigation Protocol | New York Patient Reference',
+    description:
+      'A structured framework for navigating the oral surgery process in New York — from first symptoms through treatment completion, with decision checkpoints at each stage.',
+    section: 'core',
+    contentFile: 'content/core/protocol.mdx',
+    routeFile: 'app/protocol/page.tsx',
+    priority: 0.87,
+    changeFrequency: 'monthly',
+    indexable: true,
+  },
+  {
+    path: '/decision-compass',
+    title: 'Oral Surgery Decision Compass | New York Patient Self-Triage',
+    description:
+      'A structured self-triage framework for New York patients — decision paths for implant candidacy, bone graft need, sedation selection, and emergency recognition.',
+    section: 'core',
+    contentFile: 'content/core/decision-compass.mdx',
+    routeFile: 'app/decision-compass/page.tsx',
+    priority: 0.9,
+    changeFrequency: 'monthly',
+    indexable: true,
+  },
+  {
+    path: '/category-language',
+    title: 'Oral Surgery Category Language | New York Reference Vocabulary',
+    description:
+      'The definitional vocabulary used across this reference — how key oral surgery terms are defined and why precise language matters for patient decision-making.',
+    section: 'core',
+    contentFile: 'content/core/category-language.mdx',
+    routeFile: 'app/category-language/page.tsx',
+    priority: 0.86,
+    changeFrequency: 'monthly',
+    indexable: true,
+  },
 
   {
     path: '/partners',

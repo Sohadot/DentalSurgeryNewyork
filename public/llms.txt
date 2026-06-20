@@ -13,7 +13,10 @@ The site is governed by a published independence policy and commercialization po
 ### Category Framework
 Conceptual and ontological reference defining the knowledge structure behind this site.
 - /ontology — Oral surgery ontology: procedures, terms, and their relationships
+- /category-language — Definitional vocabulary used across this reference
 - /standards — Patient decision standards applied across the site
+- /protocol — Patient navigation framework: phases, checkpoints, and documentation standards
+- /decision-compass — Structured self-triage decision paths for implant candidacy, grafting, sedation, and emergency recognition
 
 ### Procedures
 Reference-grade guides for oral surgery procedures commonly encountered by New York patients.

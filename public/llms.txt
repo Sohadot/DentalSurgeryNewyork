@@ -10,6 +10,11 @@ The site is governed by a published independence policy and commercialization po
 
 ## Key Sections
 
+### Category Framework
+Conceptual and ontological reference defining the knowledge structure behind this site.
+- /ontology — Oral surgery ontology: procedures, terms, and their relationships
+- /standards — Patient decision standards applied across the site
+
 ### Procedures
 Reference-grade guides for oral surgery procedures commonly encountered by New York patients.
 - /procedures — Procedure hub
@@ -67,7 +72,6 @@ Location-specific decision context for New York City patients.
 - /methodology — Research and editorial methodology
 - /independence-policy — Editorial independence policy
 - /accuracy-policy — Accuracy and revision policy
-- /standards — Patient decision standards used across the site
 - /editorial-updates — Transparent content update log
 - /disclaimer — Informational use disclaimer
 

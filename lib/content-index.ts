@@ -111,6 +111,18 @@ export const ROUTE_INDEX: RouteEntry[] = [
     changeFrequency: 'monthly',
     indexable: true,
   },
+  {
+    path: '/ontology',
+    title: 'Oral Surgery Ontology | New York Patient Reference Framework',
+    description:
+      'A conceptual map of oral surgery terms, procedures, decisions, and relationships — the knowledge framework underlying this independent New York reference.',
+    section: 'core',
+    contentFile: 'content/core/ontology.mdx',
+    routeFile: 'app/ontology/page.tsx',
+    priority: 0.88,
+    changeFrequency: 'monthly',
+    indexable: true,
+  },
 
   {
     path: '/partners',

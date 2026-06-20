@@ -6,6 +6,22 @@ This is not a medical literature review log. No clinical reviewer is listed on t
 
 ---
 
+## 2026-06-20 — Structured Data Layer and Question Library Expansion
+
+**Added (question pages — 6 new):** `/questions/what-happens-if-you-dont-replace-a-missing-tooth`, `/questions/what-is-socket-preservation-and-why-does-it-matter`, `/questions/can-dental-implants-fail`, `/questions/does-insurance-cover-oral-surgery-in-new-york`, `/questions/what-to-expect-on-the-day-of-oral-surgery`, `/questions/how-do-i-know-if-i-need-a-sinus-lift`.
+
+**Added (decision guide):** `/guides/understanding-your-oral-surgery-estimate` — a structured guide to reading itemized oral surgery estimates, identifying common omissions in low-cost quotes, and comparing estimates across providers on equivalent terms.
+
+**Added (structured data):** Schema.org JSON-LD coverage extended across all 46 indexed routes. Procedure pages emit `MedicalWebPage` and `BreadcrumbList`. All thirteen patient question pages emit `FAQPage` and `BreadcrumbList`. Cost guides, patient decision guides, borough location pages, the procedure hub, and core governance pages now emit `MedicalWebPage` and `BreadcrumbList`.
+
+**Updated (agent-readable index):** `public/llms.txt` updated to reflect all 46 indexed routes across procedures, costs, guides, questions, and borough sections.
+
+**Route index:** ROUTE_INDEX contains 46 entries covering home, core, commercial, procedure, cost, guide, location, and question sections.
+
+**Purpose:** Extend structured data coverage to all content pages to strengthen eligibility for Google rich results, particularly FAQ rich results for patient questions. Expand the question library with six new patient-facing topics relevant to oral surgery decisions in New York. Add a strategic guide addressing the estimate-comparison gap, which is a high-intent decision moment for patients.
+
+---
+
 ## 2026-05-11 — Institutional Trust and Underwriting Layer
 
 **Added:** `/standards` (New York Oral Surgery Decision Standards), `/cost-index` (New York Oral Surgery Cost Index), `/checklists` (Oral Surgery Consultation Checklists), `/editorial-updates` (this page).

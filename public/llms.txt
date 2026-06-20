@@ -87,6 +87,11 @@ Focused answers to common patient questions about oral surgery in New York.
 - /questions/what-is-pericoronitis — Pericoronitis: gum infection around partially erupted wisdom teeth, symptoms, and treatment options
 - /questions/does-medicaid-cover-oral-surgery-in-new-york — Medicaid and oral surgery in New York: what is covered and what requires prior authorization
 - /questions/what-is-an-oral-and-maxillofacial-surgeon — OMFS credentials, training path, and scope of practice relative to general dentists and periodontists
+- /questions/how-long-does-a-tooth-extraction-take — Simple extractions: 20–40 minutes. Surgical cases with impaction or multiple roots: 45–90 minutes. Key variables explained.
+- /questions/what-is-the-cost-of-full-mouth-reconstruction — Multi-phase treatment cost in NYC: components, insurance limitations, and how to evaluate a written estimate
+- /questions/what-is-peri-implant-mucositis — Reversible gum inflammation around implants: early warning before bone loss, distinction from peri-implantitis, treatment
+- /questions/what-does-board-certified-mean-for-oral-surgeons — ABOMS voluntary credential beyond state licensure: requirements, maintenance, and how to verify
+- /questions/how-does-diabetes-affect-oral-surgery — Risk modifier for healing, infection, and osseointegration: what to disclose and HbA1c reference points
 
 ### Borough Guides
 Location-specific decision context for New York City patients.

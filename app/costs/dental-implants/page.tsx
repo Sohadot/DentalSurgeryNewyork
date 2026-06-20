@@ -6,6 +6,7 @@ import {
   getDentalImplantsCostData,
 } from '../../../lib/cost-data'
 import { buildMetadata } from '../../../lib/metadata'
+import { buildMedicalWebPageSchema, buildBreadcrumbSchema } from '../../../lib/schema'
 
 const route = getRouteByPath('/costs/dental-implants')
 
@@ -28,6 +29,18 @@ export default function DentalImplantCostPage() {
       eyebrow="Cost Guide"
       title="Dental Implant Cost in New York"
       intro="Understand the structure behind implant pricing rather than relying on headline numbers alone."
+      schemas={[
+        buildMedicalWebPageSchema({
+          title: route.title,
+          description: route.description,
+          path: route.path,
+        }),
+        buildBreadcrumbSchema([
+          { name: 'Home', path: '/' },
+          { name: 'Dental Implants', path: '/procedures/dental-implants' },
+          { name: 'Dental Implant Cost', path: '/costs/dental-implants' },
+        ]),
+      ]}
     >
       <DentalImplantCostContent />
 

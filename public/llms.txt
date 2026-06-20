@@ -67,6 +67,11 @@ Focused answers to common patient questions about oral surgery in New York.
 - /questions/what-causes-dry-socket-and-how-is-it-treated — Extraction complication: risk factors and management
 - /questions/when-should-i-see-an-oral-surgeon-instead-of-a-dentist — Scope of practice and referral guidance
 - /questions/what-happens-after-dental-implant-placement — Osseointegration period through crown delivery
+- /questions/what-is-all-on-4-and-how-does-it-differ-from-traditional-implants — Full-arch implant system vs. single implants and dentures
+- /questions/how-do-i-know-if-my-dental-implant-is-failing — Early and late failure signs and when to seek evaluation
+- /questions/can-wisdom-teeth-cause-problems-if-left-in-place — Impaction risks, infection, cysts, and monitoring vs. removal
+- /questions/what-is-bone-resorption-and-why-does-it-happen — Jawbone loss after tooth extraction: timeline and implications
+- /questions/is-it-possible-to-get-dental-implants-after-dentures — Bone loss, evaluation, and implant options for denture wearers
 
 ### Borough Guides
 Location-specific decision context for New York City patients.

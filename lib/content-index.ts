@@ -723,6 +723,66 @@ export const ROUTE_INDEX: RouteEntry[] = [
     changeFrequency: 'weekly',
     indexable: true,
   },
+  {
+    path: '/questions/what-is-all-on-4-and-how-does-it-differ-from-traditional-implants',
+    title: 'What Is All-on-4 and How Does It Differ from Traditional Implants?',
+    description:
+      'Understand what All-on-4 dental implants are, how they compare to single implants and dentures, and what to ask before choosing a full-arch solution in New York.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-all-on-4-and-how-does-it-differ-from-traditional-implants.mdx',
+    routeFile: 'app/questions/what-is-all-on-4-and-how-does-it-differ-from-traditional-implants/page.tsx',
+    priority: 0.79,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/how-do-i-know-if-my-dental-implant-is-failing',
+    title: 'How Do I Know If My Dental Implant Is Failing? | New York Guide',
+    description:
+      'Understand the signs that a dental implant may be failing, what early vs. late failure looks like, and when to contact your provider in New York.',
+    section: 'question',
+    contentFile: 'content/questions/how-do-i-know-if-my-dental-implant-is-failing.mdx',
+    routeFile: 'app/questions/how-do-i-know-if-my-dental-implant-is-failing/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/can-wisdom-teeth-cause-problems-if-left-in-place',
+    title: 'Can Wisdom Teeth Cause Problems If Left in Place? | New York',
+    description:
+      'Understand what issues impacted or erupted wisdom teeth can cause over time in New York, including infection, decay, cysts, and when removal is indicated.',
+    section: 'question',
+    contentFile: 'content/questions/can-wisdom-teeth-cause-problems-if-left-in-place.mdx',
+    routeFile: 'app/questions/can-wisdom-teeth-cause-problems-if-left-in-place/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-bone-resorption-and-why-does-it-happen',
+    title: 'What Is Bone Resorption and Why Does It Happen? | New York Guide',
+    description:
+      'Understand what bone resorption means after tooth loss in New York, why jawbone shrinks over time, and how this affects implant candidacy and treatment timing.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-bone-resorption-and-why-does-it-happen.mdx',
+    routeFile: 'app/questions/what-is-bone-resorption-and-why-does-it-happen/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/is-it-possible-to-get-dental-implants-after-dentures',
+    title: 'Can You Get Dental Implants After Dentures? | New York Guide',
+    description:
+      'Understand whether dental implants are possible after conventional dentures in New York, what bone loss means for candidacy, and what the evaluation process involves.',
+    section: 'question',
+    contentFile: 'content/questions/is-it-possible-to-get-dental-implants-after-dentures.mdx',
+    routeFile: 'app/questions/is-it-possible-to-get-dental-implants-after-dentures/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
 ]
 
 export function getRouteByPath(routePath: string): RouteEntry {

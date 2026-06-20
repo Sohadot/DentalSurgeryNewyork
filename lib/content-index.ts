@@ -687,6 +687,42 @@ export const ROUTE_INDEX: RouteEntry[] = [
     changeFrequency: 'weekly',
     indexable: true,
   },
+  {
+    path: '/questions/what-causes-dry-socket-and-how-is-it-treated',
+    title: 'What Causes Dry Socket and How Is It Treated? | New York Patients',
+    description:
+      'Understand what dry socket is, why it occurs after tooth extraction in New York, what the symptoms are, and how providers typically manage it.',
+    section: 'question',
+    contentFile: 'content/questions/what-causes-dry-socket-and-how-is-it-treated.mdx',
+    routeFile: 'app/questions/what-causes-dry-socket-and-how-is-it-treated/page.tsx',
+    priority: 0.76,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/when-should-i-see-an-oral-surgeon-instead-of-a-dentist',
+    title: 'When Should I See an Oral Surgeon Instead of a Dentist? | New York',
+    description:
+      'Understand when a general dentist scope is sufficient versus when an oral surgeon is appropriate for your situation in New York, and how to evaluate referrals.',
+    section: 'question',
+    contentFile: 'content/questions/when-should-i-see-an-oral-surgeon-instead-of-a-dentist.mdx',
+    routeFile: 'app/questions/when-should-i-see-an-oral-surgeon-instead-of-a-dentist/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-happens-after-dental-implant-placement',
+    title: 'What Happens After Dental Implant Placement? | New York Patient Guide',
+    description:
+      'Understand what to expect after dental implant surgery in New York, including the osseointegration timeline, follow-up appointments, and when the crown is placed.',
+    section: 'question',
+    contentFile: 'content/questions/what-happens-after-dental-implant-placement.mdx',
+    routeFile: 'app/questions/what-happens-after-dental-implant-placement/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
 ]
 
 export function getRouteByPath(routePath: string): RouteEntry {

@@ -61,6 +61,12 @@ Focused answers to common patient questions about oral surgery in New York.
 - /questions/does-insurance-cover-oral-surgery-in-new-york — Dental vs medical insurance coverage
 - /questions/what-to-expect-on-the-day-of-oral-surgery — Arrival through discharge sequence
 - /questions/how-do-i-know-if-i-need-a-sinus-lift — Upper jaw bone assessment for implants
+- /questions/what-is-the-difference-between-a-periodontist-and-an-oral-surgeon — Specialist scope and credential differences
+- /questions/what-is-osseointegration-and-why-does-it-matter — Bone-implant integration: process and timeline
+- /questions/can-i-get-dental-implants-if-i-have-gum-disease — Periodontal conditions and implant candidacy
+- /questions/what-causes-dry-socket-and-how-is-it-treated — Extraction complication: risk factors and management
+- /questions/when-should-i-see-an-oral-surgeon-instead-of-a-dentist — Scope of practice and referral guidance
+- /questions/what-happens-after-dental-implant-placement — Osseointegration period through crown delivery
 
 ### Borough Guides
 Location-specific decision context for New York City patients.

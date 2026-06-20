@@ -1,5 +1,37 @@
 # Decision Log
 
+## 2026-06-20 - Evidence Integrity Layer and Asset Readiness Report
+
+**Decision:** Add an evidence-integrity layer that maps sensitive content topics to official and internal standards, validates required caution language, and generates an asset readiness report during reference-data refresh.
+
+**Rationale:** The asset should not only be structurally governed; it should be evidence-aware. Pages involving Medicaid, Medicare, insurance, cost, emergency care, sedation, recovery, implants, and clinical risk require stronger controls than ordinary informational pages. This layer makes those controls executable instead of relying on memory or informal editorial intent.
+
+**Artifacts created:**
+
+- `lib/evidence-registry.ts` - source registry and route evidence-profile generator.
+- `scripts/validate-evidence-integrity.ts` - validation gate for evidence-source freshness, sensitive-topic source depth, and required caution language.
+- `scripts/build-asset-readiness-report.ts` - generator for `data/system/asset-readiness-report.json`.
+- `data/system/asset-readiness-report.json` - machine-readable transparency report for route count, evidence sources, risk tiers, topic coverage, and active validation gates.
+
+**Source posture:** The registry includes official sources for New York Medicaid dental policy and Medicare dental coverage, plus internal editorial standards for methodology, accuracy, disclaimer, coverage verification, and cost-data framing. Official program sources are assigned a 180-day verification cadence; internal editorial standards are assigned 180- or 365-day cadence depending on volatility.
+
+**Correction made:** Updated the Medicaid oral surgery page to avoid an outdated blanket statement that implants are generally excluded. The current 2026 NYS Medicaid dental manual states that dental implants and implant-related services may be covered when medically necessary and supported by required documentation and prior approval. The page now reflects this more accurate and conditional posture.
+
+**Governance controls added:**
+
+- Fails if an evidence source is stale beyond its review cadence.
+- Fails if an evidence source lacks HTTPS or an internal governed URL.
+- Fails if elevated or high-risk routes lack sufficient evidence source depth.
+- Fails if cost pages or cost-sensitive pages omit directional/written-estimate language.
+- Fails if insurance, Medicaid, or coverage pages omit verification/prior authorization/plan confirmation language.
+- Fails if emergency, sedation, recovery, or clinical-risk pages omit topic-specific caution language.
+
+**Publication posture:** This layer does not claim clinical review, legal advice, insurance approval, provider endorsement, or guaranteed pricing. It records what evidence sources are used, when they were last verified, and which automated controls are active.
+
+**Strategic alignment:** Strengthens the asset as a sovereign reference system by making trust inspectable: source registry, high-risk page detection, required caution language, and a generated readiness report that can be audited after every build.
+
+---
+
 ## 2026-06-20 - Asset Governance Gate and Orphan Content Closure
 
 **Decision:** Add a strict asset-governance validation layer and close the current orphan-content gap by registering five previously ungoverned question files as public, indexed question pages.

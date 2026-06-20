@@ -35,6 +35,7 @@ Structured decision guidance for New York patients.
 - /guides/choose-an-oral-surgeon — Credentials, transparency standards, what to ask
 - /guides/questions-to-ask-before-surgery — Pre-treatment question framework
 - /guides/anesthesia-credentials-explained — Sedation roles and provider credentials
+- /guides/understanding-your-oral-surgery-estimate — How to read and compare written estimates
 - /checklists — Consultation checklists by procedure type
 
 ### Patient Questions
@@ -46,6 +47,12 @@ Focused answers to common patient questions about oral surgery in New York.
 - /questions/what-is-the-difference-between-an-oral-surgeon-and-a-dentist — Provider credential differences
 - /questions/what-sedation-options-are-available-for-oral-surgery — Sedation type overview
 - /questions/how-long-does-dental-implant-treatment-take — Implant treatment timeline
+- /questions/what-happens-if-you-dont-replace-a-missing-tooth — Bone loss and shifting teeth over time
+- /questions/what-is-socket-preservation-and-why-does-it-matter — Preserving bone at extraction time
+- /questions/can-dental-implants-fail — Failure risk factors and what to ask before treatment
+- /questions/does-insurance-cover-oral-surgery-in-new-york — Dental vs medical insurance coverage
+- /questions/what-to-expect-on-the-day-of-oral-surgery — Arrival through discharge sequence
+- /questions/how-do-i-know-if-i-need-a-sinus-lift — Upper jaw bone assessment for implants
 
 ### Borough Guides
 Location-specific decision context for New York City patients.

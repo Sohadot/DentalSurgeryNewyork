@@ -1,5 +1,34 @@
 # Decision Log
 
+## 2026-06-20 - Public Proof Layer and Strategic Acquisition Posture
+
+**Decision:** Add a public asset-readiness page and an internal strategic acquisition/underwriting brief to shift the asset from page expansion toward proof depth.
+
+**Rationale:** The asset's next value increase should come from visible governance, evidence posture, authority-page depth, and commercial discipline rather than undifferentiated page growth. A serious buyer, underwriter, or partner should be able to see that the site is not merely a domain with articles but a governed reference system.
+
+**Artifacts created:**
+
+- `/asset-readiness` - public summary of validation gates, evidence posture, cost boundaries, and commercial limits.
+- `STRATEGIC_ACQUISITION_BRIEF.md` - cautious buyer/underwriter-facing positioning document.
+
+**Authority pages linked to proof layer:**
+
+- `/costs/dental-implants`
+- `/procedures/dental-implants`
+- `/questions/what-is-included-in-implant-cost`
+- `/questions/does-medicaid-cover-oral-surgery-in-new-york`
+- `/cost-index`
+- `/methodology`
+- `/editorial-updates`
+
+**Governance principle established:** The asset should not ask to be bought. It should make non-ownership feel like a missed strategic position. This principle does not permit hype, fake scarcity, traffic guarantees, ranking promises, or clinical authority claims. It requires proof surfaces that make the asset's structure, trust architecture, and commercial boundaries inspectable.
+
+**Search Console posture:** Search Console connection is identified as the next external proof step. Metrics should be used to establish indexed pages, impressions, query movement, and page visibility, not vanity claims. Search data should be interpreted alongside governance depth.
+
+**Expansion restraint:** No broad page expansion is authorized by this decision. New pages should deepen authority, evidence, or internal context before increasing inventory count.
+
+---
+
 ## 2026-06-20 - Evidence Integrity Layer and Asset Readiness Report
 
 **Decision:** Add an evidence-integrity layer that maps sensitive content topics to official and internal standards, validates required caution language, and generates an asset readiness report during reference-data refresh.

@@ -112,6 +112,18 @@ export const ROUTE_INDEX: RouteEntry[] = [
     indexable: true,
   },
   {
+    path: '/asset-readiness',
+    title: 'Asset Readiness & Governance | Dental Surgery New York',
+    description:
+      'A transparent summary of the validation gates, evidence posture, cost boundaries, and commercial limits behind this New York oral surgery reference.',
+    section: 'core',
+    contentFile: 'content/core/asset-readiness.mdx',
+    routeFile: 'app/asset-readiness/page.tsx',
+    priority: 0.78,
+    changeFrequency: 'monthly',
+    indexable: true,
+  },
+  {
     path: '/ontology',
     title: 'Oral Surgery Ontology | New York Patient Reference Framework',
     description:

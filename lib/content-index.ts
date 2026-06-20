@@ -963,6 +963,66 @@ export const ROUTE_INDEX: RouteEntry[] = [
     changeFrequency: 'weekly',
     indexable: true,
   },
+  {
+    path: '/questions/how-long-does-a-tooth-extraction-take',
+    title: 'How Long Does a Tooth Extraction Take? | New York Patient Guide',
+    description:
+      'Simple extractions take 20–40 minutes. Surgical cases with impaction or multiple roots typically take 45–90 minutes. Key variables explained.',
+    section: 'question',
+    contentFile: 'content/questions/how-long-does-a-tooth-extraction-take.mdx',
+    routeFile: 'app/questions/how-long-does-a-tooth-extraction-take/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-the-cost-of-full-mouth-reconstruction',
+    title: 'What Is the Cost of Full-Mouth Reconstruction? | New York Guide',
+    description:
+      'Full-mouth reconstruction in New York typically costs $30,000–$90,000 or more depending on implant count, grafting needs, and material choices.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-the-cost-of-full-mouth-reconstruction.mdx',
+    routeFile: 'app/questions/what-is-the-cost-of-full-mouth-reconstruction/page.tsx',
+    priority: 0.8,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-peri-implant-mucositis',
+    title: 'What Is Peri-Implant Mucositis? | Implant Health Explained',
+    description:
+      'Peri-implant mucositis is reversible gum inflammation around a dental implant — an early warning sign that can be resolved before bone loss begins.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-peri-implant-mucositis.mdx',
+    routeFile: 'app/questions/what-is-peri-implant-mucositis/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-does-board-certified-mean-for-oral-surgeons',
+    title: 'What Does Board Certified Mean for Oral Surgeons? | New York',
+    description:
+      'Board certification by ABOMS is a voluntary credential beyond state licensure. What it requires, what it signals, and how to verify certification status.',
+    section: 'question',
+    contentFile: 'content/questions/what-does-board-certified-mean-for-oral-surgeons.mdx',
+    routeFile: 'app/questions/what-does-board-certified-mean-for-oral-surgeons/page.tsx',
+    priority: 0.79,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/how-does-diabetes-affect-oral-surgery',
+    title: 'How Does Diabetes Affect Oral Surgery? | New York Patient Guide',
+    description:
+      'Diabetes affects healing, infection risk, and osseointegration. What patients with diabetes should disclose before oral surgery and what to ask providers.',
+    section: 'question',
+    contentFile: 'content/questions/how-does-diabetes-affect-oral-surgery.mdx',
+    routeFile: 'app/questions/how-does-diabetes-affect-oral-surgery/page.tsx',
+    priority: 0.78,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
 ]
 
 export function getRouteByPath(routePath: string): RouteEntry {

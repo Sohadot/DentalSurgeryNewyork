@@ -459,6 +459,66 @@ export const ROUTE_INDEX: RouteEntry[] = [
     changeFrequency: 'weekly',
     indexable: true,
   },
+  {
+    path: '/questions/is-bone-grafting-required-for-dental-implants',
+    title: 'Is Bone Grafting Required for Dental Implants? | New York',
+    description:
+      'Understand when bone grafting is and is not required before dental implants in New York, and what to ask your provider about bone volume assessment.',
+    section: 'question',
+    contentFile: 'content/questions/is-bone-grafting-required-for-dental-implants.mdx',
+    routeFile: 'app/questions/is-bone-grafting-required-for-dental-implants/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/how-do-i-compare-oral-surgery-quotes-in-new-york',
+    title: 'How to Compare Oral Surgery Quotes in New York | Guide',
+    description:
+      'Learn how to compare oral surgery quotes in New York, including what a complete estimate includes, what low quotes often omit, and what to request in writing.',
+    section: 'question',
+    contentFile: 'content/questions/how-do-i-compare-oral-surgery-quotes-in-new-york.mdx',
+    routeFile: 'app/questions/how-do-i-compare-oral-surgery-quotes-in-new-york/page.tsx',
+    priority: 0.76,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-the-difference-between-an-oral-surgeon-and-a-dentist',
+    title: 'Oral Surgeon vs. Dentist in New York | What Patients Should Know',
+    description:
+      'Understand the difference between an oral surgeon and a general dentist in New York, when specialist involvement matters, and how to verify credentials.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-the-difference-between-an-oral-surgeon-and-a-dentist.mdx',
+    routeFile: 'app/questions/what-is-the-difference-between-an-oral-surgeon-and-a-dentist/page.tsx',
+    priority: 0.76,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-sedation-options-are-available-for-oral-surgery',
+    title: 'Sedation Options for Oral Surgery in New York | What to Ask',
+    description:
+      'Understand sedation types for oral surgery in New York, including local anesthesia, conscious sedation, and general anesthesia, and what to clarify before treatment.',
+    section: 'question',
+    contentFile: 'content/questions/what-sedation-options-are-available-for-oral-surgery.mdx',
+    routeFile: 'app/questions/what-sedation-options-are-available-for-oral-surgery/page.tsx',
+    priority: 0.75,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/how-long-does-dental-implant-treatment-take',
+    title: 'How Long Does Dental Implant Treatment Take? | New York Guide',
+    description:
+      'Understand the dental implant treatment timeline in New York, including what affects duration from implant placement through final restoration.',
+    section: 'question',
+    contentFile: 'content/questions/how-long-does-dental-implant-treatment-take.mdx',
+    routeFile: 'app/questions/how-long-does-dental-implant-treatment-take/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
 ]
 
 export function getRouteByPath(routePath: string): RouteEntry {

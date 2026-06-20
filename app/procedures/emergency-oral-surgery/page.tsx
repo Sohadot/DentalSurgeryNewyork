@@ -2,6 +2,7 @@ import EmergencyOralSurgeryContent from '../../../content/procedures/emergency-o
 import PageShell from '../../../components/page-shell'
 import { getRouteByPath } from '../../../lib/content-index'
 import { buildMetadata } from '../../../lib/metadata'
+import { buildMedicalWebPageSchema, buildBreadcrumbSchema } from '../../../lib/schema'
 
 const route = getRouteByPath('/procedures/emergency-oral-surgery')
 
@@ -17,6 +18,18 @@ export default function EmergencyOralSurgeryPage() {
       eyebrow="Procedure Guide"
       title="Emergency Oral Surgery in New York"
       intro="A reference-grade guide to recognizing urgent oral situations, understanding when to seek emergency care, and what to expect when time matters."
+      schemas={[
+        buildMedicalWebPageSchema({
+          title: route.title,
+          description: route.description,
+          path: route.path,
+        }),
+        buildBreadcrumbSchema([
+          { name: 'Home', path: '/' },
+          { name: 'Procedures', path: '/procedures' },
+          { name: 'Emergency Oral Surgery', path: '/procedures/emergency-oral-surgery' },
+        ]),
+      ]}
     >
       <EmergencyOralSurgeryContent />
     </PageShell>

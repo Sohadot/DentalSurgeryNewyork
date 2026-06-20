@@ -6,6 +6,7 @@ import {
   getWisdomToothRemovalCostData,
 } from '../../../lib/cost-data'
 import { buildMetadata } from '../../../lib/metadata'
+import { buildMedicalWebPageSchema, buildBreadcrumbSchema } from '../../../lib/schema'
 
 const route = getRouteByPath('/costs/wisdom-tooth-removal')
 
@@ -33,6 +34,18 @@ export default function WisdomToothRemovalCostPage() {
       eyebrow="Cost Guide"
       title="Wisdom Tooth Removal Cost in NYC"
       intro="A patient-first guide to how extraction complexity, sedation, imaging, and aftercare can change total cost."
+      schemas={[
+        buildMedicalWebPageSchema({
+          title: route.title,
+          description: route.description,
+          path: route.path,
+        }),
+        buildBreadcrumbSchema([
+          { name: 'Home', path: '/' },
+          { name: 'Wisdom Tooth Removal', path: '/procedures/wisdom-tooth-removal' },
+          { name: 'Wisdom Tooth Removal Cost', path: '/costs/wisdom-tooth-removal' },
+        ]),
+      ]}
     >
       <WisdomToothRemovalCostContent />
 

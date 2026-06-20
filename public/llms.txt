@@ -10,6 +10,14 @@ The site is governed by a published independence policy and commercialization po
 
 ## Key Sections
 
+### Category Framework
+Conceptual and ontological reference defining the knowledge structure behind this site.
+- /ontology — Oral surgery ontology: procedures, terms, and their relationships
+- /category-language — Definitional vocabulary used across this reference
+- /standards — Patient decision standards applied across the site
+- /protocol — Patient navigation framework: phases, checkpoints, and documentation standards
+- /decision-compass — Structured self-triage decision paths for implant candidacy, grafting, sedation, and emergency recognition
+
 ### Procedures
 Reference-grade guides for oral surgery procedures commonly encountered by New York patients.
 - /procedures — Procedure hub
@@ -35,6 +43,7 @@ Structured decision guidance for New York patients.
 - /guides/choose-an-oral-surgeon — Credentials, transparency standards, what to ask
 - /guides/questions-to-ask-before-surgery — Pre-treatment question framework
 - /guides/anesthesia-credentials-explained — Sedation roles and provider credentials
+- /guides/understanding-your-oral-surgery-estimate — How to read and compare written estimates
 - /checklists — Consultation checklists by procedure type
 
 ### Patient Questions
@@ -46,6 +55,18 @@ Focused answers to common patient questions about oral surgery in New York.
 - /questions/what-is-the-difference-between-an-oral-surgeon-and-a-dentist — Provider credential differences
 - /questions/what-sedation-options-are-available-for-oral-surgery — Sedation type overview
 - /questions/how-long-does-dental-implant-treatment-take — Implant treatment timeline
+- /questions/what-happens-if-you-dont-replace-a-missing-tooth — Bone loss and shifting teeth over time
+- /questions/what-is-socket-preservation-and-why-does-it-matter — Preserving bone at extraction time
+- /questions/can-dental-implants-fail — Failure risk factors and what to ask before treatment
+- /questions/does-insurance-cover-oral-surgery-in-new-york — Dental vs medical insurance coverage
+- /questions/what-to-expect-on-the-day-of-oral-surgery — Arrival through discharge sequence
+- /questions/how-do-i-know-if-i-need-a-sinus-lift — Upper jaw bone assessment for implants
+- /questions/what-is-the-difference-between-a-periodontist-and-an-oral-surgeon — Specialist scope and credential differences
+- /questions/what-is-osseointegration-and-why-does-it-matter — Bone-implant integration: process and timeline
+- /questions/can-i-get-dental-implants-if-i-have-gum-disease — Periodontal conditions and implant candidacy
+- /questions/what-causes-dry-socket-and-how-is-it-treated — Extraction complication: risk factors and management
+- /questions/when-should-i-see-an-oral-surgeon-instead-of-a-dentist — Scope of practice and referral guidance
+- /questions/what-happens-after-dental-implant-placement — Osseointegration period through crown delivery
 
 ### Borough Guides
 Location-specific decision context for New York City patients.
@@ -60,7 +81,6 @@ Location-specific decision context for New York City patients.
 - /methodology — Research and editorial methodology
 - /independence-policy — Editorial independence policy
 - /accuracy-policy — Accuracy and revision policy
-- /standards — Patient decision standards used across the site
 - /editorial-updates — Transparent content update log
 - /disclaimer — Informational use disclaimer
 

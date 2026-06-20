@@ -2,6 +2,7 @@ import WisdomToothRemovalContent from '../../../content/procedures/wisdom-tooth-
 import PageShell from '../../../components/page-shell'
 import { getRouteByPath } from '../../../lib/content-index'
 import { buildMetadata } from '../../../lib/metadata'
+import { buildMedicalWebPageSchema, buildBreadcrumbSchema } from '../../../lib/schema'
 
 const route = getRouteByPath('/procedures/wisdom-tooth-removal')
 
@@ -17,6 +18,18 @@ export default function WisdomToothRemovalPage() {
       eyebrow="Procedure Guide"
       title="Wisdom Tooth Removal in New York City"
       intro="A reference-grade guide to extraction complexity, sedation structure, cost drivers, and the questions that matter before treatment."
+      schemas={[
+        buildMedicalWebPageSchema({
+          title: route.title,
+          description: route.description,
+          path: route.path,
+        }),
+        buildBreadcrumbSchema([
+          { name: 'Home', path: '/' },
+          { name: 'Procedures', path: '/procedures' },
+          { name: 'Wisdom Tooth Removal', path: '/procedures/wisdom-tooth-removal' },
+        ]),
+      ]}
     >
       <WisdomToothRemovalContent />
     </PageShell>

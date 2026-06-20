@@ -1,5 +1,6 @@
 import { buildMetadata } from '../../lib/metadata'
 import { getRouteByPath } from '../../lib/content-index'
+import { buildMedicalWebPageSchema, buildBreadcrumbSchema } from '../../lib/schema'
 import Link from 'next/link'
 
 const route = getRouteByPath('/procedures')
@@ -64,6 +65,30 @@ const PROCEDURES = [
 export default function ProceduresPage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            buildMedicalWebPageSchema({
+              title: route.title,
+              description: route.description,
+              path: route.path,
+            })
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            buildBreadcrumbSchema([
+              { name: 'Home', path: '/' },
+              { name: 'Oral Surgery Procedures', path: '/procedures' },
+            ])
+          ),
+        }}
+      />
+
       <section className="procedures-intro">
         <div className="container">
           <div className="page-eyebrow">Procedure Reference</div>

@@ -2,6 +2,7 @@ import AccuracyPolicyContent from '../../content/core/accuracy-policy.mdx'
 import PageShell from '../../components/page-shell'
 import { getRouteByPath } from '../../lib/content-index'
 import { buildMetadata } from '../../lib/metadata'
+import { buildMedicalWebPageSchema, buildBreadcrumbSchema } from '../../lib/schema'
 
 const route = getRouteByPath('/accuracy-policy')
 
@@ -17,6 +18,17 @@ export default function AccuracyPolicyPage() {
       eyebrow="Policy"
       title="Accuracy Policy"
       intro="How the site thinks about accuracy, revision discipline, and the limits of informational healthcare content."
+      schemas={[
+        buildMedicalWebPageSchema({
+          title: route.title,
+          description: route.description,
+          path: route.path,
+        }),
+        buildBreadcrumbSchema([
+          { name: 'Home', path: '/' },
+          { name: 'Accuracy Policy', path: '/accuracy-policy' },
+        ]),
+      ]}
     >
       <AccuracyPolicyContent />
     </PageShell>

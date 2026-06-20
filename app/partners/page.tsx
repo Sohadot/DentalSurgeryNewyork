@@ -1,5 +1,6 @@
 import { buildMetadata } from '../../lib/metadata'
 import { getRouteByPath } from '../../lib/content-index'
+import { buildMedicalWebPageSchema, buildBreadcrumbSchema } from '../../lib/schema'
 
 const route = getRouteByPath('/partners')
 
@@ -21,7 +22,7 @@ const TIERS = [
       'Visible in your relevant borough section',
       'Outbound link to your practice website',
       'Contact information displayed',
-      'Clear "Partner Practice" disclosure label',
+      'Clear “Partner Practice” disclosure label',
     ],
     note: 'Suitable for founding partners. No traffic guarantees. No clinical claims.',
     featured: false,
@@ -87,6 +88,30 @@ const PRINCIPLES = [
 export default function PartnersPage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            buildMedicalWebPageSchema({
+              title: route.title,
+              description: route.description,
+              path: route.path,
+            })
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            buildBreadcrumbSchema([
+              { name: 'Home', path: '/' },
+              { name: 'Partner Practice Program', path: '/partners' },
+            ])
+          ),
+        }}
+      />
+
       <section className="partners-hero">
         <div className="container">
           <div className="page-eyebrow">Partner Practice Program</div>

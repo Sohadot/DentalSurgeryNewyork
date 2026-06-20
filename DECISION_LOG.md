@@ -1,5 +1,39 @@
 # Decision Log
 
+## 2026-06-20 - Asset Governance Gate and Orphan Content Closure
+
+**Decision:** Add a strict asset-governance validation layer and close the current orphan-content gap by registering five previously ungoverned question files as public, indexed question pages.
+
+**Rationale:** A reference-grade digital asset cannot rely on page count alone. It needs enforceable controls that keep the route registry, content inventory, metadata, internal links, and publication boundaries aligned. Orphan content weakens governance because it exists outside sitemap, metadata, route validation, and editorial discoverability. Pages without internal links also weaken the conceptual graph and make the asset easier to fragment or imitate.
+
+**Artifacts created:**
+
+- `scripts/validate-asset-governance.ts` - CI-grade validator for strategic asset integrity.
+- `/questions/how-do-i-care-for-my-dental-implant`
+- `/questions/how-does-age-affect-dental-implant-candidacy`
+- `/questions/how-long-does-bone-grafting-take-to-heal`
+- `/questions/how-long-does-swelling-last-after-oral-surgery`
+- `/questions/what-is-a-mini-dental-implant`
+
+**Governance controls added:**
+
+- Fails if an `app/**/page.tsx` page exists outside `ROUTE_INDEX`.
+- Fails if a `content/**/*.mdx` file exists outside `ROUTE_INDEX`.
+- Fails if governed content falls below section-specific word floors.
+- Fails if governed reference pages lack a minimum internal-link graph.
+- Fails if internal Markdown links point to missing governed routes.
+- Fails on placeholder language such as TODO, TBD, lorem ipsum, coming soon, or placeholder.
+- Fails on high-risk absolute claims such as "best oral surgeon," guaranteed coverage/results/pricing, 100% approval/success, or risk-free language unless used in a clearly negating context.
+- Keeps the existing SEO, route, content, cost-content, and cost-data gates intact.
+
+**Content graph repair:** Added contextual internal links to five existing question pages that had no internal links and to the five newly registered pages. These links are topic-relevant and connect implant maintenance, recovery, bone grafting, swelling, crowns, nerve risk, and full-arch pricing back into the broader oral surgery reference graph.
+
+**Publication posture:** This change does not claim clinical review, provider endorsement, ranking authority, or guaranteed medical/insurance outcomes. It strengthens the asset as an independently governed reference system by making quality failures machine-detectable before build/deploy.
+
+**Strategic alignment:** Supports the sovereign reference objective by making imitation harder through enforceable structure: route registry discipline, no orphan content, no broken internal references, no thin governed pages, and no unbounded claims.
+
+---
+
 ## 2026-05-11 — Borough Decision Layer (Sprint 7)
 
 **Decision:** Replace shallow borough location pages with comprehensive 11-section patient decision guides for all five NYC boroughs (Manhattan, Brooklyn, Queens, the Bronx, Staten Island). Strengthen the `/locations` hub page.

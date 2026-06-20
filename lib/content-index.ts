@@ -1143,6 +1143,66 @@ export const ROUTE_INDEX: RouteEntry[] = [
     changeFrequency: 'weekly',
     indexable: true,
   },
+  {
+    path: '/questions/how-do-i-care-for-my-dental-implant',
+    title: 'How Do I Care for My Dental Implant? | Long-Term Maintenance',
+    description:
+      'Learn how to care for a dental implant, including daily cleaning, professional maintenance, warning signs, crown lifespan, and long-term risk factors.',
+    section: 'question',
+    contentFile: 'content/questions/how-do-i-care-for-my-dental-implant.mdx',
+    routeFile: 'app/questions/how-do-i-care-for-my-dental-implant/page.tsx',
+    priority: 0.78,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/how-does-age-affect-dental-implant-candidacy',
+    title: 'How Does Age Affect Dental Implant Candidacy? | New York Guide',
+    description:
+      'Understand how age affects dental implant candidacy, including jaw growth, bone volume, systemic health, medications, and implant planning questions.',
+    section: 'question',
+    contentFile: 'content/questions/how-does-age-affect-dental-implant-candidacy.mdx',
+    routeFile: 'app/questions/how-does-age-affect-dental-implant-candidacy/page.tsx',
+    priority: 0.78,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/how-long-does-bone-grafting-take-to-heal',
+    title: 'How Long Does Bone Grafting Take to Heal? | Implant Planning',
+    description:
+      'Understand bone graft healing timelines before implant placement, including socket preservation, ridge augmentation, sinus lifts, and CBCT readiness checks.',
+    section: 'question',
+    contentFile: 'content/questions/how-long-does-bone-grafting-take-to-heal.mdx',
+    routeFile: 'app/questions/how-long-does-bone-grafting-take-to-heal/page.tsx',
+    priority: 0.78,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/how-long-does-swelling-last-after-oral-surgery',
+    title: 'How Long Does Swelling Last After Oral Surgery? | Recovery Guide',
+    description:
+      'Learn the usual swelling timeline after oral surgery, what affects recovery by procedure type, and warning signs that require prompt provider contact.',
+    section: 'question',
+    contentFile: 'content/questions/how-long-does-swelling-last-after-oral-surgery.mdx',
+    routeFile: 'app/questions/how-long-does-swelling-last-after-oral-surgery/page.tsx',
+    priority: 0.78,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-a-mini-dental-implant',
+    title: 'What Is a Mini Dental Implant? | Uses, Limits, and Cost Context',
+    description:
+      'Understand mini dental implants, including denture stabilization use cases, differences from standard implants, cost context, and questions to ask.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-a-mini-dental-implant.mdx',
+    routeFile: 'app/questions/what-is-a-mini-dental-implant/page.tsx',
+    priority: 0.78,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
 ]
 
 export function getRouteByPath(routePath: string): RouteEntry {

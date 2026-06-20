@@ -1023,6 +1023,66 @@ export const ROUTE_INDEX: RouteEntry[] = [
     changeFrequency: 'weekly',
     indexable: true,
   },
+  {
+    path: '/questions/how-long-does-a-dental-implant-last',
+    title: 'How Long Does a Dental Implant Last? | New York Patient Guide',
+    description:
+      'Understand how long dental implants typically last in New York, what affects longevity, the difference between the implant post and crown, and maintenance requirements.',
+    section: 'question',
+    contentFile: 'content/questions/how-long-does-a-dental-implant-last.mdx',
+    routeFile: 'app/questions/how-long-does-a-dental-implant-last/page.tsx',
+    priority: 0.8,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/can-you-smoke-after-tooth-extraction',
+    title: 'Can You Smoke After Tooth Extraction? | New York Recovery Guide',
+    description:
+      'Smoking significantly increases dry socket risk after tooth extraction. Why it matters, how long to wait, and what to watch for during recovery in New York.',
+    section: 'question',
+    contentFile: 'content/questions/can-you-smoke-after-tooth-extraction.mdx',
+    routeFile: 'app/questions/can-you-smoke-after-tooth-extraction/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-a-healing-abutment',
+    title: 'What Is a Healing Abutment? | Dental Implant Process Explained',
+    description:
+      'A healing abutment shapes the gum tissue around the implant during the transition from bone integration to final crown placement. The role explained.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-a-healing-abutment.mdx',
+    routeFile: 'app/questions/what-is-a-healing-abutment/page.tsx',
+    priority: 0.76,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-immediate-implant-placement',
+    title: 'What Is Immediate Implant Placement? | New York Patient Guide',
+    description:
+      'Immediate implant placement means placing the implant on the same day as tooth extraction. When it is appropriate, when it is not, and what to ask.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-immediate-implant-placement.mdx',
+    routeFile: 'app/questions/what-is-immediate-implant-placement/page.tsx',
+    priority: 0.78,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/how-do-blood-thinners-affect-oral-surgery',
+    title: 'How Do Blood Thinners Affect Oral Surgery? | New York Guide',
+    description:
+      'Blood thinners affect clotting and healing after oral surgery. What to disclose, how surgeons manage the risk, and what to ask your prescribing physician.',
+    section: 'question',
+    contentFile: 'content/questions/how-do-blood-thinners-affect-oral-surgery.mdx',
+    routeFile: 'app/questions/how-do-blood-thinners-affect-oral-surgery/page.tsx',
+    priority: 0.78,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
 ]
 
 export function getRouteByPath(routePath: string): RouteEntry {

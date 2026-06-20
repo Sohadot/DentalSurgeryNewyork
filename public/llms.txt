@@ -72,6 +72,11 @@ Focused answers to common patient questions about oral surgery in New York.
 - /questions/can-wisdom-teeth-cause-problems-if-left-in-place — Impaction risks, infection, cysts, and monitoring vs. removal
 - /questions/what-is-bone-resorption-and-why-does-it-happen — Jawbone loss after tooth extraction: timeline and implications
 - /questions/is-it-possible-to-get-dental-implants-after-dentures — Bone loss, evaluation, and implant options for denture wearers
+- /questions/what-are-the-risks-of-oral-surgery — Risk categories: infection, bleeding, nerve involvement, sedation response
+- /questions/how-do-i-prepare-for-wisdom-tooth-removal — Pre-procedure preparation: fasting, medication, transport, recovery planning
+- /questions/what-is-full-mouth-reconstruction — Multi-stage treatment plan for multiple missing or failing teeth
+- /questions/how-does-smoking-affect-dental-implants — Smoking effects on healing, osseointegration, and long-term implant health
+- /questions/what-is-a-dental-implant-abutment — The connector component between implant post and crown: role and cost implications
 
 ### Borough Guides
 Location-specific decision context for New York City patients.

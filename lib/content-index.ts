@@ -783,6 +783,66 @@ export const ROUTE_INDEX: RouteEntry[] = [
     changeFrequency: 'weekly',
     indexable: true,
   },
+  {
+    path: '/questions/what-are-the-risks-of-oral-surgery',
+    title: 'What Are the Risks of Oral Surgery? | New York Patient Guide',
+    description:
+      'Learn about oral surgery risk categories in New York — infection, bleeding, nerve involvement, and sedation response — and what to ask providers before treatment.',
+    section: 'question',
+    contentFile: 'content/questions/what-are-the-risks-of-oral-surgery.mdx',
+    routeFile: 'app/questions/what-are-the-risks-of-oral-surgery/page.tsx',
+    priority: 0.78,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/how-do-i-prepare-for-wisdom-tooth-removal',
+    title: 'How Do I Prepare for Wisdom Tooth Removal? | New York Guide',
+    description:
+      'Understand how to prepare for wisdom tooth removal in New York, from fasting and medication considerations to transport arrangements and recovery planning.',
+    section: 'question',
+    contentFile: 'content/questions/how-do-i-prepare-for-wisdom-tooth-removal.mdx',
+    routeFile: 'app/questions/how-do-i-prepare-for-wisdom-tooth-removal/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-full-mouth-reconstruction',
+    title: 'What Is Full Mouth Reconstruction? | New York Patient Reference',
+    description:
+      'Understand what full mouth reconstruction involves in New York, how it differs from single-tooth implants, its cost complexity, and what to clarify before treatment.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-full-mouth-reconstruction.mdx',
+    routeFile: 'app/questions/what-is-full-mouth-reconstruction/page.tsx',
+    priority: 0.79,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/how-does-smoking-affect-dental-implants',
+    title: 'How Does Smoking Affect Dental Implants? | New York Guide',
+    description:
+      'Understand how smoking affects dental implant healing, osseointegration, and long-term implant health, and what to ask your provider before treatment in New York.',
+    section: 'question',
+    contentFile: 'content/questions/how-does-smoking-affect-dental-implants.mdx',
+    routeFile: 'app/questions/how-does-smoking-affect-dental-implants/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-a-dental-implant-abutment',
+    title: 'What Is a Dental Implant Abutment? | New York Patient Guide',
+    description:
+      'Understand the role of the abutment in a dental implant system, why it matters for cost estimates, and what questions to ask before treatment in New York.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-a-dental-implant-abutment.mdx',
+    routeFile: 'app/questions/what-is-a-dental-implant-abutment/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
 ]
 
 export function getRouteByPath(routePath: string): RouteEntry {

@@ -77,6 +77,11 @@ Focused answers to common patient questions about oral surgery in New York.
 - /questions/what-is-full-mouth-reconstruction — Multi-stage treatment plan for multiple missing or failing teeth
 - /questions/how-does-smoking-affect-dental-implants — Smoking effects on healing, osseointegration, and long-term implant health
 - /questions/what-is-a-dental-implant-abutment — The connector component between implant post and crown: role and cost implications
+- /questions/what-is-peri-implantitis — Late-stage implant infection causing bone loss: causes, signs, and prevention questions
+- /questions/what-is-a-cbct-scan — Three-dimensional jaw imaging for implant and grafting planning: when it is needed and what it costs
+- /questions/what-is-iv-sedation-and-how-does-it-work — IV sedation mechanics, credentials, preparation, and what to ask before agreeing
+- /questions/how-does-bone-grafting-work — Graft types, materials, healing timelines, and how grafting fits into the implant sequence
+- /questions/what-should-i-eat-after-oral-surgery — Post-operative diet guidelines: soft foods, what to avoid, and recovery planning
 
 ### Borough Guides
 Location-specific decision context for New York City patients.

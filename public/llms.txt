@@ -67,6 +67,41 @@ Focused answers to common patient questions about oral surgery in New York.
 - /questions/what-causes-dry-socket-and-how-is-it-treated — Extraction complication: risk factors and management
 - /questions/when-should-i-see-an-oral-surgeon-instead-of-a-dentist — Scope of practice and referral guidance
 - /questions/what-happens-after-dental-implant-placement — Osseointegration period through crown delivery
+- /questions/what-is-all-on-4-and-how-does-it-differ-from-traditional-implants — Full-arch implant system vs. single implants and dentures
+- /questions/how-do-i-know-if-my-dental-implant-is-failing — Early and late failure signs and when to seek evaluation
+- /questions/can-wisdom-teeth-cause-problems-if-left-in-place — Impaction risks, infection, cysts, and monitoring vs. removal
+- /questions/what-is-bone-resorption-and-why-does-it-happen — Jawbone loss after tooth extraction: timeline and implications
+- /questions/is-it-possible-to-get-dental-implants-after-dentures — Bone loss, evaluation, and implant options for denture wearers
+- /questions/what-are-the-risks-of-oral-surgery — Risk categories: infection, bleeding, nerve involvement, sedation response
+- /questions/how-do-i-prepare-for-wisdom-tooth-removal — Pre-procedure preparation: fasting, medication, transport, recovery planning
+- /questions/what-is-full-mouth-reconstruction — Multi-stage treatment plan for multiple missing or failing teeth
+- /questions/how-does-smoking-affect-dental-implants — Smoking effects on healing, osseointegration, and long-term implant health
+- /questions/what-is-a-dental-implant-abutment — The connector component between implant post and crown: role and cost implications
+- /questions/what-is-peri-implantitis — Late-stage implant infection causing bone loss: causes, signs, and prevention questions
+- /questions/what-is-a-cbct-scan — Three-dimensional jaw imaging for implant and grafting planning: when it is needed and what it costs
+- /questions/what-is-iv-sedation-and-how-does-it-work — IV sedation mechanics, credentials, preparation, and what to ask before agreeing
+- /questions/how-does-bone-grafting-work — Graft types, materials, healing timelines, and how grafting fits into the implant sequence
+- /questions/what-should-i-eat-after-oral-surgery — Post-operative diet guidelines: soft foods, what to avoid, and recovery planning
+- /questions/why-are-dental-implants-so-expensive — Implant cost breakdown: components, provider and facility fees, and how to interpret pricing variation
+- /questions/what-is-the-difference-between-a-dental-implant-and-a-bridge — Implant vs. bridge: structure, longevity, bone preservation, and cost comparison
+- /questions/what-is-pericoronitis — Pericoronitis: gum infection around partially erupted wisdom teeth, symptoms, and treatment options
+- /questions/does-medicaid-cover-oral-surgery-in-new-york — Medicaid and oral surgery in New York: what is covered and what requires prior authorization
+- /questions/what-is-an-oral-and-maxillofacial-surgeon — OMFS credentials, training path, and scope of practice relative to general dentists and periodontists
+- /questions/how-long-does-a-tooth-extraction-take — Simple extractions: 20–40 minutes. Surgical cases with impaction or multiple roots: 45–90 minutes. Key variables explained.
+- /questions/what-is-the-cost-of-full-mouth-reconstruction — Multi-phase treatment cost in NYC: components, insurance limitations, and how to evaluate a written estimate
+- /questions/what-is-peri-implant-mucositis — Reversible gum inflammation around implants: early warning before bone loss, distinction from peri-implantitis, treatment
+- /questions/what-does-board-certified-mean-for-oral-surgeons — ABOMS voluntary credential beyond state licensure: requirements, maintenance, and how to verify
+- /questions/how-does-diabetes-affect-oral-surgery — Risk modifier for healing, infection, and osseointegration: what to disclose and HbA1c reference points
+- /questions/how-long-does-a-dental-implant-last — Implant post can last decades (90–95% at 10yr); crown lasts 10–15 years. Longevity factors and maintenance explained.
+- /questions/can-you-smoke-after-tooth-extraction — Smoking increases dry socket risk 3–5x. Minimum wait times, mechanisms, and recovery guidance.
+- /questions/what-is-a-healing-abutment — Temporary component that shapes gum tissue between osseointegration and final crown placement.
+- /questions/what-is-immediate-implant-placement — Implant placed same day as extraction. Candidacy requirements, distinction from immediate loading.
+- /questions/how-do-blood-thinners-affect-oral-surgery — Anticoagulants and antiplatelet agents: disclosure requirements, surgeon management approach, and physician coordination.
+- /questions/what-is-a-dental-crown — Tooth-shaped cap placed over an implant or natural tooth. Materials, timing after placement, cemented vs. screw-retained options, and NYC cost context.
+- /questions/how-do-i-know-if-my-extraction-site-is-healing-normally — Normal healing by day: clot formation, swelling peak at 48–72 hours, soft tissue closure. Red flags for dry socket, infection, and when to call.
+- /questions/what-is-a-flipper-tooth — Removable acrylic partial denture for temporary tooth replacement during implant healing. Appropriate use, NYC cost, and limitations versus fixed options.
+- /questions/what-is-nerve-damage-after-oral-surgery — Inferior alveolar and lingual nerve injury: temporary vs. lasting paresthesia, pre-operative imaging, and when to seek specialist evaluation.
+- /questions/how-are-dental-implants-priced-per-arch — Per-arch quote structure for full-arch replacement. What All-on-4 includes and excludes, and how to evaluate a written estimate in NYC.
 
 ### Borough Guides
 Location-specific decision context for New York City patients.

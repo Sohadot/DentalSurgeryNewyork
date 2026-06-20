@@ -1083,6 +1083,66 @@ export const ROUTE_INDEX: RouteEntry[] = [
     changeFrequency: 'weekly',
     indexable: true,
   },
+  {
+    path: '/questions/what-is-a-dental-crown',
+    title: 'What Is a Dental Crown and When Is One Placed After Oral Surgery?',
+    description:
+      'A dental crown is a tooth-shaped cap placed over an implant or natural tooth. Materials, timing after implant placement, cemented vs. screw-retained, and cost context.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-a-dental-crown.mdx',
+    routeFile: 'app/questions/what-is-a-dental-crown/page.tsx',
+    priority: 0.75,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/how-do-i-know-if-my-extraction-site-is-healing-normally',
+    title: 'How Do I Know If My Extraction Site Is Healing Normally?',
+    description:
+      'Normal extraction healing by day: clot formation, swelling timeline, soft tissue closure. Red flags for dry socket, infection, or incomplete healing that warrant a call.',
+    section: 'question',
+    contentFile: 'content/questions/how-do-i-know-if-my-extraction-site-is-healing-normally.mdx',
+    routeFile: 'app/questions/how-do-i-know-if-my-extraction-site-is-healing-normally/page.tsx',
+    priority: 0.77,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-a-flipper-tooth',
+    title: 'What Is a Flipper Tooth and When Is One Used After an Extraction?',
+    description:
+      'A flipper is a removable acrylic partial denture for temporary tooth replacement. When it is appropriate, NYC cost context, and limitations versus fixed alternatives.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-a-flipper-tooth.mdx',
+    routeFile: 'app/questions/what-is-a-flipper-tooth/page.tsx',
+    priority: 0.75,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/what-is-nerve-damage-after-oral-surgery',
+    title: 'What Is Nerve Damage After Oral Surgery and How Is It Identified?',
+    description:
+      'Nerve injury risk in oral surgery: inferior alveolar nerve and lingual nerve. Distinguishing temporary numbness from lasting paresthesia, and what evaluations follow.',
+    section: 'question',
+    contentFile: 'content/questions/what-is-nerve-damage-after-oral-surgery.mdx',
+    routeFile: 'app/questions/what-is-nerve-damage-after-oral-surgery/page.tsx',
+    priority: 0.78,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
+  {
+    path: '/questions/how-are-dental-implants-priced-per-arch',
+    title: 'How Are Dental Implants Priced Per Arch for Full-Arch Replacement?',
+    description:
+      'Full-arch implant pricing in NYC: per-arch quote structure, what All-on-4 includes and excludes, difference from per-implant pricing, and written estimate guidance.',
+    section: 'question',
+    contentFile: 'content/questions/how-are-dental-implants-priced-per-arch.mdx',
+    routeFile: 'app/questions/how-are-dental-implants-priced-per-arch/page.tsx',
+    priority: 0.78,
+    changeFrequency: 'weekly',
+    indexable: true,
+  },
 ]
 
 export function getRouteByPath(routePath: string): RouteEntry {

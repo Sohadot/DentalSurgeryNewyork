@@ -1,5 +1,39 @@
 # Decision Log
 
+## 2026-07-10 - Homepage Reference Priority Layer (Core Reference Map)
+
+**Decision:** Add a "Core Reference Map" section to the homepage that links the asset's authority pages directly from the root, organized as four functional groups: Cost Context, Procedure Guidance, NYC Local Context, and Evidence & Governance.
+
+**Rationale:** Search Console data (as of 2026-06-30) shows 11 pages indexed out of 97 in the sitemap, with a cohort of ~25 discovered pages dropped from Google's crawl queue in late May. Live URL tests confirm pages are technically indexable, so the constraint is crawl priority, not crawlability. The homepage previously linked only 5 internal destinations, giving no signal about which pages are central to the system. This layer places the authority pages one click from the root — for crawlers, for patients navigating decisions, and for any buyer or underwriter evaluating whether the asset is a system or a pile of articles.
+
+**Framing constraint:** This is a priority architecture layer, not an SEO link block. Each group carries a functional description of what the pages do for a patient's decision. No "guaranteed," "best," or ranking language. Externally the layer is described as "a governed reference for oral surgery decisions in New York"; internally it advances the asset's positioning from category asset toward category intelligence source.
+
+**Pages elevated to root-level linking:**
+
+- `/costs/dental-implants`
+- `/costs/wisdom-tooth-removal`
+- `/cost-index`
+- `/questions/what-is-included-in-implant-cost`
+- `/procedures/dental-implants`
+- `/procedures/wisdom-tooth-removal`
+- `/guides/choose-an-oral-surgeon`
+- `/locations/manhattan`
+- `/locations/brooklyn`
+- `/locations/staten-island` (the one page with an open "crawled, currently not indexed" validation in Search Console)
+- `/asset-readiness`
+- `/methodology`
+- `/questions/does-medicaid-cover-oral-surgery-in-new-york`
+
+**Artifacts changed:**
+
+- `app/page.tsx` - Core Reference Map section added after the "What this asset is" block.
+- `styles/reference-map.css` - dedicated styles following existing tokens.
+- `styles/globals.css` - import added.
+
+**What this decision does not authorize:** No new pages. No aggressive link building, purchased backlinks, or indexing-API use. No bulk indexing requests. Manual indexing requests remain limited to the authority pages above, paced over days. External signals are limited to clean surfaces (owned portfolio/profile links, genuine citations).
+
+---
+
 ## 2026-06-20 - Public Proof Layer and Strategic Acquisition Posture
 
 **Decision:** Add a public asset-readiness page and an internal strategic acquisition/underwriting brief to shift the asset from page expansion toward proof depth.

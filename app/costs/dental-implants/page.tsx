@@ -1,5 +1,6 @@
 import DentalImplantCostContent from '../../../content/costs/dental-implants.mdx'
 import PageShell from '../../../components/page-shell'
+import RelatedQuestions from '../../../components/related-questions'
 import { getRouteByPath } from '../../../lib/content-index'
 import {
   formatDirectionalRange,
@@ -104,6 +105,7 @@ export default function DentalImplantCostPage() {
         These figures are published as directional market context, not as quotes.
         A written itemized estimate remains necessary before treatment.
       </p>
+    <RelatedQuestions parentPath="/costs/dental-implants" />
     </PageShell>
   )
 }

@@ -1,5 +1,24 @@
 # Decision Log
 
+## 2026-07-22 - Related Questions Layer (Orphan Reachability Repair)
+
+**Decision:** Add a contextual "Related questions" navigation block to seven authority pages (five procedure guides, the dental-implants cost guide, and the choose-an-oral-surgeon guide), linking the 16 question pages that previously had no internal inbound link.
+
+**Rationale:** An internal-link audit found 16 `/questions/*` pages reachable only from the sitemap — zero inbound internal links — consistent with the Search Console cohort of discovered pages dropped from Google's crawl queue. Authority pages are well-linked (30–44 inbound); these 16 were structurally invisible to crawlers, to patients navigating a decision, and to AI systems that follow site structure. Each question is now linked from the single authority page it topically belongs to, giving it a genuine internal path and a priority signal. This is a priority-architecture layer, not an SEO link block: every link is a real topical relationship, and question titles are resolved from `ROUTE_INDEX` so link text never drifts from each page's own title.
+
+**Artifacts created/changed:**
+
+- `lib/related-questions.ts` — typed parent→questions map and accessor.
+- `components/related-questions.tsx` — renders the block; labels resolved from `ROUTE_INDEX`; renders nothing when a parent has no mapped questions.
+- `styles/related-questions.css` and its `styles/globals.css` import.
+- Seven authority pages render `<RelatedQuestions />` after their content: `/procedures/dental-implants`, `/procedures/tooth-extraction`, `/procedures/wisdom-tooth-removal`, `/procedures/oral-surgery-sedation`, `/procedures/bone-grafting`, `/costs/dental-implants`, `/guides/choose-an-oral-surgeon`.
+
+**Verification:** `npm run typecheck`, the full `npm run validate` governance suite (content, routes, seo, asset-governance, evidence-integrity, cost-content, cost-data), and `next build` all pass. Post-change internal-link audit reports 0 orphan routes (down from 16).
+
+**What this decision does not authorize:** No new pages. No aggressive or purchased link building, and no bulk indexing requests. No ranking, "best," or commercial language — the block is neutral navigation. No change to editorial content, cost data, or commercial posture.
+
+---
+
 ## 2026-07-10 - Homepage Reference Priority Layer (Core Reference Map)
 
 **Decision:** Add a "Core Reference Map" section to the homepage that links the asset's authority pages directly from the root, organized as four functional groups: Cost Context, Procedure Guidance, NYC Local Context, and Evidence & Governance.

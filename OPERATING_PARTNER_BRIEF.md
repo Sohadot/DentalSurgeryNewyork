@@ -93,6 +93,19 @@ Breach of any of these is a defined event of default with a cure period and reve
 
 ---
 
+## Operator Sole Responsibility & Indemnification
+
+The owner licenses the asset from outside the United States and does not operate it, contact patients, or sell placements. The operating agreement therefore places all operational and jurisdictional compliance on the operator:
+
+- The operator is **solely responsible** for compliance with all applicable United States, New York State, advertising, disclosure, and professional-conduct rules arising from operating and commercializing the asset — including the New York Education Law and ADA ethics constraints on any practice relationship it forms.
+- The operator **indemnifies and holds the owner harmless** against any claim, liability, or penalty arising from the operator's conduct, sales, disclosures, or partner relationships.
+- The owner makes no clinical representations and forms no relationship with any practice; the owner's role is limited to licensing the asset and receiving a royalty.
+- The **governing law and venue** of the agreement may be set to a jurisdiction convenient to the owner or a neutral one; it need not be New York.
+
+This keeps the owner's exposure limited to that of an intellectual-property licensor.
+
+---
+
 ## Asset Protection
 
 The arrangement is structured so the owner's asset is never diluted:
@@ -107,11 +120,11 @@ The arrangement is structured so the owner's asset is never diluted:
 ## How to Proceed
 
 1. Mutual NDA (optional) before sharing operating specifics.
-2. A written **Operating / License Agreement**, reviewed by a New York attorney (the medical-commercial and IP-licensing nature warrants it), executed before any operation begins.
+2. A written **Operating / License Agreement** — a standard IP / website operating license carrying the operator's sole-responsibility and indemnification terms above — executed before any operation begins. A general contract review (a qualified contract lawyer or a reputable legal service, not necessarily a New York firm) is sufficient; the operator, not the owner, carries the US / New York operational compliance.
 3. Governance adherence confirmed in the agreement, not assumed.
 
 No operating access, publishing rights, or partner sales occur before agreement execution.
 
 ---
 
-*This document is an internal commercial brief. It is not a binding offer, and it is not legal advice; commercial terms and the operating agreement should be finalized with qualified counsel.*
+*This document is an internal commercial brief. It is not a binding offer, and it is not legal advice; commercial terms and the operating agreement should be finalized with qualified counsel appropriate to the owner's location.*

@@ -1,5 +1,6 @@
 import ToothExtractionContent from '../../../content/procedures/tooth-extraction.mdx'
 import PageShell from '../../../components/page-shell'
+import RelatedQuestions from '../../../components/related-questions'
 import { getRouteByPath } from '../../../lib/content-index'
 import { buildMetadata } from '../../../lib/metadata'
 import { buildMedicalWebPageSchema, buildBreadcrumbSchema } from '../../../lib/schema'
@@ -32,6 +33,7 @@ export default function ToothExtractionPage() {
       ]}
     >
       <ToothExtractionContent />
+    <RelatedQuestions parentPath="/procedures/tooth-extraction" />
     </PageShell>
   )
 }

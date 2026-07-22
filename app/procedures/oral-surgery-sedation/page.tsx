@@ -1,5 +1,6 @@
 import OralSurgerySedationContent from '../../../content/procedures/oral-surgery-sedation.mdx'
 import PageShell from '../../../components/page-shell'
+import RelatedQuestions from '../../../components/related-questions'
 import { getRouteByPath } from '../../../lib/content-index'
 import { buildMetadata } from '../../../lib/metadata'
 import { buildMedicalWebPageSchema, buildBreadcrumbSchema } from '../../../lib/schema'
@@ -32,6 +33,7 @@ export default function OralSurgerySedationPage() {
       ]}
     >
       <OralSurgerySedationContent />
+    <RelatedQuestions parentPath="/procedures/oral-surgery-sedation" />
     </PageShell>
   )
 }

@@ -1,5 +1,6 @@
 import WisdomToothRemovalContent from '../../../content/procedures/wisdom-tooth-removal.mdx'
 import PageShell from '../../../components/page-shell'
+import RelatedQuestions from '../../../components/related-questions'
 import { getRouteByPath } from '../../../lib/content-index'
 import { buildMetadata } from '../../../lib/metadata'
 import { buildMedicalWebPageSchema, buildBreadcrumbSchema } from '../../../lib/schema'
@@ -32,6 +33,7 @@ export default function WisdomToothRemovalPage() {
       ]}
     >
       <WisdomToothRemovalContent />
+    <RelatedQuestions parentPath="/procedures/wisdom-tooth-removal" />
     </PageShell>
   )
 }

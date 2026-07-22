@@ -1,0 +1,38 @@
+.related-questions {
+  margin-top: var(--space-8, 2.5rem);
+  border-top: 1px solid var(--color-border, rgba(0, 0, 0, 0.1));
+  padding-top: var(--space-6, 1.5rem);
+}
+
+.related-questions-title {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-text-soft, #555);
+  margin: 0 0 var(--space-4, 1rem);
+}
+
+.related-questions-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-2, 0.5rem);
+}
+
+.related-questions-list li {
+  margin: 0;
+}
+
+.related-questions-list a {
+  color: var(--color-accent, #1a5f7a);
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-accent-line, rgba(0, 0, 0, 0.15));
+  transition: color var(--transition-medium, 0.2s);
+}
+
+.related-questions-list a:hover {
+  color: var(--color-text, #111);
+}
